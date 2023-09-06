@@ -40,16 +40,16 @@ To fit **brms** model, set up [**cmdstanr**](https://mc-stan.org/cmdstanr/).
 1. Download or clone this repository to your machine.
 
 ```
-git clone git@github.com:cdmuir/stomatal-ilima.git
+git clone git@github.com:cdmuir/stomata-ilima.git
 ```
 
-2. Open `stomatal-ilima.Rproj` in [RStudio](https://www.rstudio.com/)
+2. Open `stomata-ilima.Rproj` in [RStudio](https://www.rstudio.com/)
 
 ## Rendering manuscript
 
 ### Software requirements
 
-At minimum, you will need [R](https://cran.r-project.org/) version 4.1.0 or greater installed on your machine. Install additional packages by running `r/install-packages.R`.
+At minimum, you will need [R](https://cran.r-project.org/) version 4.3.0 or greater installed on your machine. Install additional packages by running `r/install-packages.R`.
 
 ### Rendering manuscript with pre-saved outout
 

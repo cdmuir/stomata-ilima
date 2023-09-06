@@ -18,7 +18,7 @@ site = read_rds("processed-data/site.rds") |>
 )) |>
   filter(site_code != "nnpl")
 
-# fit_licor = read_rds("objects/fit_licor.rds")
+fit_licor = read_rds("objects/fit_licor.rds")
 
 aa = read_rds("objects/aa.rds") |>
   filter(draw == 1L) |>

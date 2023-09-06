@@ -5,7 +5,7 @@ data: processed-data/licor.rds processed-data/site.rds processed-data/trait.rds 
 model: objects/fit_licor.rds objects/fit_stomata.rds objects/fit_thickness.rds
 paper: ms/ms.pdf ms/si.pdf
 
-ms/ms.pdf: ms/ms.Rmd ms/stomata-ilima.bib figures/habitat-aa.pdf figures/habitat-Ags.pdf figures/habitat-gmaxratio.pdf figures/licor.pdf figures/traits-aa.pdf processed-data/licor.rds objects/fit-licor.rds objects/fit_stomata.rds objects/fit_thickness.rds objects/habitat_aa.rds objects/habitat_aa1.rds objects/coef_thickness_aa.rds objects/gmaxratio_sitetype.rds objects/coef_gmaxratio_aa.rds objects/fit_habitat_Ags.rds objects/sum_data.rds r/header.R r/functions.R
+ms/ms.pdf: ms/ms.qmd ms/stomata-ilima.bib figures/habitat-aa.pdf figures/habitat-Ags.pdf figures/habitat-gmaxratio.pdf figures/licor.pdf figures/traits-aa.pdf processed-data/licor.rds objects/fit-licor.rds objects/fit_stomata.rds objects/fit_thickness.rds objects/habitat_aa.rds objects/habitat_aa1.rds objects/coef_thickness_aa.rds objects/gmaxratio_sitetype.rds objects/coef_gmaxratio_aa.rds objects/fit_habitat_Ags.rds objects/sum_data.rds r/header.R r/functions.R
 	quarto render ms/ms.qmd
 	quarto render ms/si.qmd
 
@@ -59,12 +59,6 @@ objects/sum_data.rds: processed-data/trait.rds objects/site_Ags.rds
 
 objects/fit_licor.rds: processed-data/licor.rds
 	Rscript -e 'source("r/04_fit-licor.R")'
-
-objects/fit_stomata.rds: processed-data/trait.rds
-	Rscript -e 'source("r/05_fit-traits.R")'
-
-objects/fit_thickness.rds: processed-data/trait.rds
-	Rscript -e 'source("r/05_fit-traits.R")'
 
 processed-data/site.rds: raw-data/site.csv
 	Rscript -e 'source("r/02_process-trait-data.R")'
