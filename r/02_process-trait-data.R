@@ -7,14 +7,7 @@ dir = "raw-data/climate"
 tair_ann = raster::raster(glue("{dir}/Tair_month_raster/tair_ann"))
 sl_mst_ann = raster::raster(glue("{dir}/SoilMoisture_month_raster/sl_mst_ann"))
 
-# Read in population information ----
-write_csv(site, "raw-data/site.csv")
-write_csv(plant, "raw-data/plant.csv")
-write_csv(licor_leaf, "raw-data/licor_leaf.csv")
-write_csv(stomata_density, "raw-data/stomata_density.csv")
-write_csv(stomata_size, "raw-data/stomata_size.csv")
-write_csv(leaf_thickness, "raw-data/leaf_thickness.csv")
-
+# Read in raw data ----
 site = read_csv("raw-data/site.csv", col_types = "ccccccDdddd")
 
 plant = read_csv("raw-data/plant.csv", col_types = "ccdd") |>

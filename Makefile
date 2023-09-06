@@ -36,6 +36,9 @@ objects/fit_stomata.rds: processed-data/trait.rds
 objects/fit_thickness.rds: processed-data/trait.rds
 	Rscript -e 'source("r/05_fit-traits.R")'
 
+objects/aa.rds: processed-data/licor.rds objects/fit_licor.rds
+	Rscript -e 'source("r/06_estimate-aa.R")'
+
 objects/habitat_aa.rds: processed-data/site.rds objects/aa.rds
 	Rscript -e 'source("r/08_plot-habitat-aa.R")'
 	
@@ -45,10 +48,19 @@ objects/habitat_aa1.rds: processed-data/site.rds objects/aa.rds
 objects/coef_thickness_aa.rds: processed-data/site.rds objects/aa.rds objects/fit_thickness.rds
 	Rscript -e 'source("r/09_plot-thickness-aa.R")'
 	
+objects/plot_thickness_aa.rds: processed-data/site.rds objects/aa.rds objects/fit_thickness.rds
+	Rscript -e 'source("r/09_plot-thickness-aa.R")'
+
 objects/gmaxratio_sitetype.rds: processed-data/site.rds objects/aa.rds objects/fit_stomata.rds
 	Rscript -e 'source("r/10_calculate-gmaxratio.R")'
 
+objects/gmaxratio_site.rds: processed-data/site.rds objects/aa.rds objects/fit_stomata.rds
+	Rscript -e 'source("r/10_calculate-gmaxratio.R")'
+
 objects/coef_gmaxratio_aa.rds: objects/aa.rds objects/gmaxratio_ind.rds objects/gmaxratio_leaf.rds processed-data/trait.rds
+	Rscript -e 'source("r/12_plot-gmaxratio-aa.R")'
+
+objects/plot_gmaxratio_aa.rds: objects/aa.rds objects/gmaxratio_ind.rds objects/gmaxratio_leaf.rds processed-data/trait.rds
 	Rscript -e 'source("r/12_plot-gmaxratio-aa.R")'
 
 objects/fit_habitat_Ags.rds: processed-data/site.rds processed-data/licor.rds
@@ -59,6 +71,9 @@ objects/sum_data.rds: processed-data/trait.rds objects/site_Ags.rds
 
 objects/fit_licor.rds: processed-data/licor.rds
 	Rscript -e 'source("r/04_fit-licor.R")'
+
+objects/site_Ags.rds: processed-data/site.rds processed-data/licor.rds
+	Rscript -e 'source("r/13_plot-habitat-Ags.R")'
 
 processed-data/site.rds: raw-data/site.csv
 	Rscript -e 'source("r/02_process-trait-data.R")'
