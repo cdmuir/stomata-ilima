@@ -1,0 +1,87 @@
+---
+format:
+  pdf:
+    keep-tex: true  
+    include-in-header: 
+      - preamble.tex
+    toc: false
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[C]{Triplett \textit{et al.} — \textit{American Journal of Botany} 2023 – Appendix S1}
+mainfont: Times New Roman
+---
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+
+library(readr)
+
+# From 15_archive-data.R
+sum_data = read_rds("../objects/sum_data.csv")
+
+```
+
+```{=tex}
+\renewcommand\thefigure{S\arabic{figure}}    
+\renewcommand\thetable{S\arabic{table}}    
+\renewcommand\theequation{S\arabic{equation}}    
+\setcounter{figure}{0}    
+\setcounter{table}{0}    
+\setcounter{equation}{0}
+```
+
+```{r, sum-data, echo=FALSE,message=FALSE,warning=FALSE,results='asis'}
+#| label: sum-data
+#| tbl-cap: "Average traits values among ʻilima leaves at each site. $\\mathrm{SD}_\\text{abaxial}$ is the stomatal density per mm$^2$ on the abaxial (lower) surface; $\\mathrm{SD}_\\text{adaxial}$ is the stomatal density per mm$^2$ on the adaxial (upper) surface; $\\mathrm{GCL}_\\text{abaxial}$ is the guard cell length in $\\mu$m on the abaxial (lower) surface; $\\mathrm{GCL}_\\text{adaxial}$ is the guard cell length in $\\mu$m on the adaxial (upper) surface; Leaf thickness is the length from upper cuticle to lower cuticle in $\\mu$m; $A$ is the photosynthetic rate in $\\mu \\text{mol CO}_2~\\text{m}^{-2}~\\text{s}^{-1}$; $g_\\mathrm{sw}$ is the stomatal conductance to water vapor in $\\text{mol}~\\text{m}^{-2}~\\text{s}^{-1}$."
+#| 
+sum_data |>
+  knitr::kable(format = "latex", digits = c(rep(0, 3), rep(2, 6), 3),
+               booktabs = TRUE, escape = FALSE, longtable = TRUE) |>
+  kableExtra::kable_styling(latex_options = c("striped", "no_vertical_lines")) |>
+  kableExtra::column_spec(1, width = "4cm") |>
+  kableExtra::column_spec(2, width = "1.5cm") |>
+  kableExtra::column_spec(3, width = "1.5cm") |>
+  kableExtra::landscape()
+
+```
+
+\newpage
+
+```{=tex}
+\begin{figure}
+  \includegraphics{../figures/licor.pdf}
+  \caption{See next page.}
+  \label{fig:licor}
+\end{figure}
+```
+
+\newpage
+
+\setcounter{figure}{\numexpr\value{figure}-1\relax}
+
+```{=tex}
+\begin{figure}
+  \caption{(Continued from previous page.) Individual $A \textendash g_\mathrm{sw}$ curves used to estimate $\mathrm{AA}$. For each leaf, one per site, we measured $A$ ($y$-axis) over a range of $g_\mathrm{sw}$ ($x$-axis) on the same leaf with two treatments: `amphi' (circles, solid line) leaves were untreated; `pseudohypo' (squares, dashed line) leaves had no conductance through the upper (adaxial) surface. In all coastal (orange) and montane (blue) leaves, we fit generalized additive models and 95\% confidence ribbons to estimate $\mathrm{AA}$ at a $g_\mathrm{sw}$ where the curves overlap (vertical black line). In leaves from Kaloko-Honokōhau national historical park and Puakō petroglyph park, we extrapolated sligtly beyond fitted curves because they did not quite overlap. $\mathrm{AA}$, amphistomy advantage; $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
+  \label{fig:licor}
+\end{figure}
+```
+
+\newpage
+
+```{=tex}
+\begin{figure}
+  \includegraphics{../figures/habitat-Ags.pdf}
+  \caption{The photsynthetic rate (left facet) and stomatal conductance to water vapor (right facet) of montane (blue) and coastal (orange) ʻilima leaves. Each point-interval is the median posterior estimate plus 95\% confidence interval of trait value for that habitat. Smaller points next to each point-interval are the $g_\mathrm{smax,ratio}$ of individual plants, one per site. $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
+  \label{fig:habitat-Ags}
+\end{figure}
+```
+
+\newpage
+
+```{=tex}
+\begin{figure}
+  \includegraphics{../figures/habitat-gmaxratio.pdf}
+  \caption{The $g_\mathrm{smax,ratio}$ ($y$-axis) of montane (blue) and coastal (orange) ʻilima leaves. Each point-interval is the median posterior estimate plus 95\% confidence interval of $g_\mathrm{smax,ratio}$ for that site. Sites are arranged by habitat and ascending $g_\mathrm{smax,ratio}$ within habitat. Smaller, transparent points next to each point-interval are the $g_\mathrm{smax,ratio}$ of individual plants. $g_\mathrm{smax,ratio}$, the ratio of anatomical maximum stomatal conductance to water vapor on the the adaxial surface over the total.}
+  \label{fig:habitat-gmaxratio}
+\end{figure}
+```

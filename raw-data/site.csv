@@ -1,0 +1,14 @@
+site,label,site_code,alias,site_type,island,date_sampled,latitude_degree,longitude_degree,elevation_m,leaf_area_chamber_cm2
+Makapuʻu beach,Makapu\u02bbu beach,mkpb,NA,coastal,oahu,2022-08-07,21.31289,-157.66133,3.048,6
+Hawaiʻi loa ridge,Hawai\u02bbi loa ridge,hwlr,NA,montane,oahu,2022-08-14,21.2943,-157.72691,351.7392,6
+Kaʻohe game management area,Ka\u02bbohe game management area,kgma,NA,montane,hawaii,2022-08-18,19.81685,-155.61612,1946.148,6
+Puakō petroglyph park,Puak\u014d petroglyph park,pkpp,ppp,coastal,hawaii,2022-08-19,19.95653,-155.85768,7.9248,6
+Koaiʻa tree sanctuary,Koai\u02bba tree sanctuary,ktrs,kts,montane,hawaii,2022-08-19,20.0482,-155.73703,969.8736,6
+Hāloa ʻĀina,Hāloa \u02bb\u0100ina,hlan,cc,montane,hawaii,2022-08-20,19.55214,-155.793,1566.9768,6
+Kaloko-Honokōhau national historical park,Kaloko-Honok\u014dhau national historical park,knhp,khnh,coastal,hawaii,2022-08-20,19.67598,-156.02405,6.096,6
+Kaloko beach,Kaloko beach,klkb,klb,coastal,oahu,2022-08-28,21.293,-157.66063,3.9624,6
+Waʻahila ridge,Wa\u02bbahila ridge,whlr,whrt,montane,oahu,2022-09-18,21.31423,-157.79306,356.616,6
+Kahuku Point,Kahuku Point,khkp,NA,coastal,oahu,2022-09-25,21.70964,-157.98215,3.9624,6
+Nuʻuanu Pali Lookout,Nu\u02bbuanu Pali Lookout,nnpl,nupl,montane,oahu,2022-10-02,21.36693,-157.79146,365.1504,NA
+Kaʻena Point,Ka\u02bbena Point,knpn,knap,coastal,oahu,2022-10-09,21.5736,-158.27794,4.2672,5.078
+Mauʻumae Ridge,Mau\u02bbumae Ridge,mmrd,whmr,montane,oahu,2022-11-20,21.30476,-157.77919,248.412,6
