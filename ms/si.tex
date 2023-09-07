@@ -197,7 +197,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, interior hidden, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, breakable, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand\thefigure{S\arabic{figure}}    
 \renewcommand\thetable{S\arabic{table}}    
@@ -255,15 +255,23 @@ Waʻahila ridge & Oʻahu & montane & 346.75 & 150.26 & 17.76 & 20.61 & 193.33 & 
 \setcounter{figure}{\numexpr\value{figure}-1\relax}
 
 \begin{figure}
-  \caption{(Contunited from previous page) Individual $A \textendash g_\mathrm{sw}$ curves used to estimate $\mathrm{AA}$. For each leaf, one per site, we measured $A$ ($y$-axis) over a range of $g_\mathrm{sw}$ ($x$-axis) on the same leaf with two treatments: `amphi' (circles, solid line) leaves were untreated; `pseudohypo' (squares, dashed line) leaves had no conductance through the upper (adaxial) surface. In all coastal (orange) and montane (blue) leaves, we fit generalized additive models and 95\% confidence ribbons to estimate $\mathrm{AA}$ at a $g_\mathrm{sw}$ where the curves overlap (vertical black line). In leaves from Kaloko-Honokōhau national historical park and Puakō petroglyph park, we extrapolated sligtly beyond fitted curves because they did not quite overlap. $\mathrm{AA}$, amphistomy advantage; $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
+  \caption{(Continued from previous page.) Individual $A \textendash g_\mathrm{sw}$ curves used to estimate $\mathrm{AA}$. For each leaf, one per site, we measured $A$ ($y$-axis) over a range of $g_\mathrm{sw}$ ($x$-axis) on the same leaf with two treatments: `amphi' (circles, solid line) leaves were untreated; `pseudohypo' (squares, dashed line) leaves had no conductance through the upper (adaxial) surface. In all coastal (orange) and montane (blue) leaves, we fit generalized additive models and 95\% confidence ribbons to estimate $\mathrm{AA}$ at a $g_\mathrm{sw}$ where the curves overlap (vertical black line). In leaves from Kaloko-Honokōhau national historical park and Puakō petroglyph park, we extrapolated sligtly beyond fitted curves because they did not quite overlap. Symbols: $\mathrm{AA}$, amphistomy advantage; $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
   \label{fig:licor}
 \end{figure}
 
 \newpage
 
 \begin{figure}
+  \includegraphics{../figures/pp-licor.pdf}
+  \caption{Posterior predictions (thin grey lines) from fitted $A \textendash g_\mathrm{sw}$ curves closely match the observed distribution (thick black line), indicating that the statistical model adequately captures variation in the response variable over the measured range. Symbols: $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
+  \label{fig:pp-licor}
+\end{figure}
+
+\newpage
+
+\begin{figure}
   \includegraphics{../figures/habitat-Ags.pdf}
-  \caption{The photsynthetic rate (left facet) and stomatal conductance to water vapor (right facet) of montane (blue) and coastal (orange) ʻilima leaves. Each point-interval is the median posterior estimate plus 95\% confidence interval of trait value for that habitat. Smaller points next to each point-interval are the $g_\mathrm{smax,ratio}$ of individual plants, one per site. $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
+  \caption{The photsynthetic rate (left facet) and stomatal conductance to water vapor (right facet) of montane (blue) and coastal (orange) ʻilima leaves. Each point-interval is the median posterior estimate plus 95\% confidence interval of trait value for that habitat. Smaller points next to each point-interval are the $g_\mathrm{smax,ratio}$ of individual plants, one per site. Symbols: $A$, photosynthetic rate in $\mu \text{mol CO}_2~\text{m}^{-2}~\text{s}^{-1}$; $g_\mathrm{sw}$, stomatal conductance to water vapor in $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$.}
   \label{fig:habitat-Ags}
 \end{figure}
 
@@ -271,7 +279,7 @@ Waʻahila ridge & Oʻahu & montane & 346.75 & 150.26 & 17.76 & 20.61 & 193.33 & 
 
 \begin{figure}
   \includegraphics{../figures/habitat-gmaxratio.pdf}
-  \caption{The $g_\mathrm{smax,ratio}$ ($y$-axis) of montane (blue) and coastal (orange) ʻilima leaves. Each point-interval is the median posterior estimate plus 95\% confidence interval of $g_\mathrm{smax,ratio}$ for that site. Sites are arranged by habitat and ascending $g_\mathrm{smax,ratio}$ within habitat. Smaller, transparent points next to each point-interval are the $g_\mathrm{smax,ratio}$ of individual plants. $g_\mathrm{smax,ratio}$, the ratio of anatomical maximum stomatal conductance to water vapor on the the adaxial surface over the total.}
+  \caption{The $g_\mathrm{smax,ratio}$ ($y$-axis) of montane (blue) and coastal (orange) ʻilima leaves. Each point-interval is the median posterior estimate plus 95\% confidence interval of $g_\mathrm{smax,ratio}$ for that site. Sites are arranged by habitat and ascending $g_\mathrm{smax,ratio}$ within habitat. Smaller, transparent points next to each point-interval are the $g_\mathrm{smax,ratio}$ of individual plants. Symbols: $g_\mathrm{smax,ratio}$, the ratio of anatomical maximum stomatal conductance to water vapor on the the adaxial surface over the total.}
   \label{fig:habitat-gmaxratio}
 \end{figure}
 
