@@ -92,6 +92,7 @@ clean:
 	
 cleanall: 
 	\rm -f *.aux *.bbl *.blg *.log *.pdf *~ *.Rout */*~ */*.Rout ms/ms.pdf ms/ms.tex ms/si.pdf ms/si.tex objects/*.rds objects/*.csv processed-data/*.rds */*.aux */*.log 
+	\rm -f dryad/stomata-ilima.csv
 	\rm -f figures/habitat-aa.pdf
 	\rm -f figures/habitat-Ags.pdf
 	\rm -f figures/habitat-gmaxratio.pdf
