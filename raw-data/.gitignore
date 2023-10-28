@@ -1,1 +1,6 @@
 *.gsheet
+climate/*
+leaf-thickness-images/*
+counted-screenshots/*
+stomata-images/*
+stomata-images1/*

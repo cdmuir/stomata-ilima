@@ -1,0 +1,5 @@
+objects/gmaxratio_[a-z]+.rds filter=lfs diff=lfs merge=lfs -text
+objects/stomata_ind.rds filter=lfs diff=lfs merge=lfs -text
+objects/stomata_leaf.rds filter=lfs diff=lfs merge=lfs -text
+objects/stomata_site.rds filter=lfs diff=lfs merge=lfs -text
+objects/stomata_sitetype.rds filter=lfs diff=lfs merge=lfs -text

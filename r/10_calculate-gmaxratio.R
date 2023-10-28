@@ -279,3 +279,7 @@ write_rds(gmaxratio_site, "objects/gmaxratio_site.rds")
 write_rds(gmaxratio_ind, "objects/gmaxratio_ind.rds")
 write_rds(gmaxratio_leaf, "objects/gmaxratio_leaf.rds")
 
+write_rds(stomata_sitetype, "objects/stomata_sitetype.rds")
+write_rds(stomata_site, "objects/stomata_site.rds")
+write_rds(stomata_ind, "objects/stomata_ind.rds")
+write_rds(stomata_leaf, "objects/stomata_leaf.rds")
