@@ -230,7 +230,7 @@ montane plants of Hawaiian ʻilima (\emph{Sida fallax})}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, enhanced, interior hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, frame hidden]}{\end{tcolorbox}}\fi
 
 \begin{center}
 Genevieve Triplett$^1$, Thomas N. Buckley$^2$, Christopher D. Muir$^{1,3,*}$
@@ -239,8 +239,8 @@ Genevieve Triplett$^1$, Thomas N. Buckley$^2$, Christopher D. Muir$^{1,3,*}$
 \(^1\) School of Life Sciences, University of Hawaiʻi Mānoa, Honolulu,
 HI, USA 96822
 
-\(^2\) School of Life Sciences, University of California, Davis, CA, USA
-95616
+\(^2\) Department of Plant Sciences, University of California, Davis,
+CA, USA 95616
 
 \(^3\) Department of Botany, University of Wisconsin, Madison, WI, USA
 53706
@@ -276,10 +276,10 @@ of the indigenous Hawaiian species ʻilima (\emph{Sida fallax}).
 \textbf{Key results} Coastal ʻilima leaves benefit 4 times more from
 amphistomy compared to their montane counterparts. Our evidence was
 equivocal with respect to two hypotheses -- that coastal leaves benefit
-more because they are thicker and therefore have lower CO\(_2\)
-conductance through the internal airspace, and that leaves with more
-similar conductances at each surface benefit more than leaves with few
-stomata on the upper surface.
+more because 1) they are thicker and therefore have lower CO\(_2\)
+conductance through the internal airspace, and 2) that they benefit more
+because they have similar conductance on each surface, as opposed to
+most of the conductance being on the lower (abaxial) surface.
 
 \textbf{Conclusions} This is the first direct experimental evidence that
 amphistomy \emph{per se} increases photosynthesis, consistent with the
@@ -289,8 +289,8 @@ amphistomatous leaves in open, sunny habitats can partially be explained
 the increased benefit of amphistomy in ʻsunʻ leaves, but the mechanistic
 basis of this observation is an area for future research.
 
-\textbf{Keywords:} amphstomy, leaf, light, Hawaiʻi, leaf, \emph{Sida
-fallax}, stomata
+\textbf{Keywords:} amphstomy, leaf, light, Hawaiʻi, \emph{Sida fallax},
+stomata
 
 \hypertarget{introduction}{%
 \section{INTRODUCTION ---}\label{introduction}}
@@ -304,7 +304,7 @@ imperative because these tiny pores play an outsized ecological role in
 the global carbon and water cycles (Hetherington and Woodward, 2003;
 Berry et al., 2010). A widely applicable, accurate representation of how
 stomata mediate the relationship between CO\(_2\) gained through
-photosynthesis and water lost through evapotranspiration is essential to
+photosynthesis and water lost through transpiration is essential to
 predict future climate using Earth Systems Models (Jarvis, 1976; Ball et
 al., 1987; Collatz et al., 1991; Leuning, 1995; Sellers et al., 1997).
 Optimality models accurately predict the major cause of water loss,
@@ -360,7 +360,14 @@ conductances for other components of the diffusion pathway, whereas the
 \(g_\mathrm{ias}\) of thick leaves with little airspace may greatly
 hinder CO\(_2\) diffusion to chloroplasts. Amphistomy should confer the
 largest photosynthetic benefit in leaves with intrinsically low
-\(g_\mathrm{ias}\).
+\(g_\mathrm{ias}\). The airspace conductance is one component of the
+overall mesophyll conductance, \(g_\mathrm{m}\), which is often strongly
+influenced by the chloroplast surface area exposed to airspace and
+mesophyll cell wall thickness (Evans et al., 2009; Gago et al., 2020;
+Flexas et al., 2021). Hence, thicker leaves may compensate for lower
+\(g_\mathrm{ias}\) through increased chloroplast surface area exposed to
+airspace (Terashima et al., 2006), but will still benefit from
+amphistomy as long as \(g_\mathrm{ias}\) is finite.
 
 Amphistomy should also enhance photosynthesis when leaf boundary layer
 resistance is high, because apportioning total flux between two boundary
@@ -370,7 +377,10 @@ with a computer model and measurements for transpiration: amphistomatous
 leaves lose somewhat more water for the same vapor pressure deficit and
 total \(g_\mathrm{sw}\) (Foster and Smith, 1986), but the additional
 carbon gain should be enough to offset this cost under most realistic
-conditions (Muir, 2019).
+conditions (Muir, 2019). However, if minimal stomatal conductance is
+related to stomatal density (Drake et al., 2013; Márquez et al., 2022)
+and the upper boundary layer conductance is higher, then amphistomy
+could cause additional, unavoidable water loss.
 
 The most promising adaptive hypothesis is that amphistomy is important
 for maximizing photosynthetic rate under high light. Mott et al. (1982)
@@ -410,15 +420,16 @@ straightforward method to do this by experimentally creating a
 pseudohypostomatous leaf with gas exchange blocked through the upper
 surface (see Materials and Methods). One reason that sun leaves might
 have greater \(\mathrm{AA}\) is that they are usually thicker or denser
-(Poorter et al., 2019), resulting in lower \(g_\mathrm{ias}\)
-(Parkhurst, 1978). A nonmutually exclusive hypothesis is that if sun
-leaves have a stomatal density ratio closer to 0.5 (same density on each
-leaf surface), this will confer a greater advantage than an
-amphistomatous leaf with most stomata on one surface. In other words,
-amphistomy doesn't make much difference if one leaf surface has few open
-stomata on it. We therefore predict that sun leaves will have greater
-\(\mathrm{AA}\) possibly because they have thicker leaves and/or
-\(\mathrm{SR}\) closer to 0.5. We actually report
+(Poorter et al., 2019), which will often result in lower
+\(g_\mathrm{ias}\) either by increasing the diffusion path length
+(Parkhurst, 1978) or making the airspace less porous. A nonmutually
+exclusive hypothesis is that if sun leaves have a stomatal density ratio
+closer to 0.5 (same density on each leaf surface), this will confer a
+greater advantage than an amphistomatous leaf with most stomata on one
+surface. In other words, amphistomy doesn't make much difference if one
+leaf surface has few open stomata on it. We therefore predict that sun
+leaves will have greater \(\mathrm{AA}\) possibly because they have
+thicker leaves and/or \(\mathrm{SR}\) closer to 0.5. We actually report
 \(g_{\mathrm{smax,ratio}}\), which is similar to \(\mathrm{SR}\) except
 that it accounts for differences in both stomatal density and size
 between surfaces.
@@ -473,8 +484,9 @@ plants have thicker leaves than montane plants and/or 2b) coastal plants
 have a \(g_{\mathrm{smax,ratio}}\) closer to 0.5?
 
 \begin{figure}[H]
-  \includegraphics{../figures/study-system.pdf}
-  \caption{(A) Typical growth form of montane (left) and coastal (right) ‘ilima plants and (B) leaves. (C) Map of the sites that were sampled on the islands of Oʻahu and Hawaiʻi (aka Big Island).}
+  \includegraphics[height=3.25in]{../figures/study-system.pdf}
+  \includegraphics[height=3.25in]{../figures/habitat-climate.pdf}
+  \caption{A. Typical growth form of montane (left) and coastal (right) ‘ilima plants and B. leaves. C. Map of the sites that were sampled on the islands of Oʻahu and Hawaiʻi (aka Big Island). D. Climatic, light, and vegetation height comparisons between montane (blue) and coastal (orange) habitats sampled in this study. Open circles are values for the midpoint of each site transect; closed circles and intervals are the mean $\pm~1$ standard error. The habitats did not differ significantly in mean annual precipitation (top-left) or solar radiation (bottom-left), but montane plants inhabit significantly cooler climates (top-right) with greater vegetation height (bottom-right). MAP = mean annual precipitation; MAT = mean annual temperature; ns = not significant; * indicates $0.01 \le P < 0.05$; ** indicates $0.001 \le P < 0.01$.}
   \label{fig:study-system}
 \end{figure}
 
@@ -482,12 +494,12 @@ have a \(g_{\mathrm{smax,ratio}}\) closer to 0.5?
 \section{MATERIALS AND METHODS ---}\label{methods}}
 
 \hypertarget{plant-sampling}{%
-\subsection{Plant sampling ---}\label{plant-sampling}}
+\subsection{Plant sampling and climate ---}\label{plant-sampling}}
 
 We identified 7 suitable natural populations of ʻilima on Oʻahu and 5 on
 Hawaiʻi Island by consulting Yorkston and Daehler (2006) and citizen
 scientist records on iNaturalist (Anon, 2022)
-(\autoref{fig:study-system}C; \autoref{tbl-locations}). We avoided sites
+(\autoref{fig:study-system}c; \autoref{tbl-locations}). We avoided sites
 that appeared to be cultivated. We visited sites between August and
 November 2022. For logistical reasons, the sites on Hawaiʻi were sampled
 during one three-day trip. We haphazardly sampled eight plants
@@ -499,11 +511,22 @@ collected two fully expanded leaves for trait measurements. We sampled
 stomatal traits on all leaves; leaf thickness on one leaf from three
 randomly selected plants per site; and, due to limited time, a single
 leaf from a single plant at the middle of each transect for gas exchange
-measurements.
+measurements. We downloaded climatic data on mean annual temperature,
+solar radiation, and vegetation height from the Climate and Solar
+Radiation of Hawaiʻi databases (Giambelluca et al., 2014) using the
+latitude and longitude at the middle of each transect. We also
+downloaded mean annual precipitation from 1978-2007 from the Rainfall
+Atlas of Hawaiʻi (Giambelluca et al., 2013). The spatial resolution is
+approximately \(234 \times 250\)m. The temperature data are calibrated
+from networks of meteorological stations operating in the late 20th
+century and 21st century; the solar radiation data are calibrated from
+satellite measurements collected between 2002 and 2009 (Giambelluca et
+al., 2014). We tested whether climatic variables differed among our
+coastal and montane populations using Welch's two-sample \(t\)-test.
 
 \hypertarget{tbl-locations}{}
 \begin{table}
-\caption{\label{tbl-locations}ʻIlima study sites for this study. }\tabularnewline
+\caption{\label{tbl-locations}ʻIlima study site location information. }\tabularnewline
 
 \centering
 \begin{tabular}{>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}}
@@ -538,7 +561,8 @@ We estimated the stomatal density and size on ab- and adaxial leaf
 surfaces from all leaves. For pubescent leaves (usually coastal), we
 dried and pressed leaves for \(\approx 1\) week (Hill et al., 2014),
 carefully scraped trichomes off with a razor blade, and rehydrated the
-leaf. For glabrous leaves, we used fresh leaves. We applied clear nail
+leaf. Rehydration restores leaf area to its fresh value (Blonder et al.,
+2012). For glabrous leaves, we used fresh leaves. We applied clear nail
 polish to both leaf surfaces of fresh or rehydrated leaves in the middle
 of the lamina away from major veins. After nail polish dried, we mounted
 impressions on a microscope slide using transparent tape (Mott and
@@ -555,7 +579,8 @@ five randomly chosen stomata per field using ImageJ (Schneider et al.,
 We cut thin sections using two razor blades taped together. We sectioned
 the leaf in a petri dish of water, wet-mounted sections onto a slide,
 and took digital micrographs using a brightfield microscope, as
-described above.
+described above. Leaf thickness is measured as the length from upper
+cuticle to lower cuticle.
 
 \hypertarget{gas-exchange-measurements}{%
 \subsubsection{Gas exchange measurements
@@ -568,12 +593,21 @@ NE, USA). We estimated the photosynthetic rate (\(A\)) and stomatal
 conductance to water vapor (\(g_\text{sw}\)) at saturating light
 (\(\text{photosynthetic photon flux density (PPFD)} = 2000~\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}\)),
 ambient CO\(_2\) (415 ppm), and
-\(T_\mathrm{leaf} = 25.0 \textendash 29.3° \text{C}\). We also estimated
-`amphistomy advantage' (\(\mathrm{AA}\)) \emph{sensu} Parkhurst (1978),
-but with modification. For each leaf, we measured the photosynthetic
-rate of an untreated amphistomatous leaf (\(A_{\mathrm{amphi}}\)) over a
-range of \(g_\text{sw}\) values. We refer to this as an
-\(A \textendash g_\text{sw}\) curve. We compared the
+\(T_\mathrm{leaf} = 25.0 \textendash 29.3° \text{C}\). The midday
+irradiance in coastal ʻilima typically meets or even exceeds a PPFD of
+\(2000~\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}\) and previous
+experiments with sun leaves revealed that
+\(2000~\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}\) is always at or near
+saturating irradiance. Even though lower irradiance may be saturating
+for montane leaves, we used this higher value for all leaves to
+standardize conditions.
+
+We also estimated `amphistomy advantage' (\(\mathrm{AA}\)) \emph{sensu}
+Parkhurst (1978), but with modification. For each leaf, we measured the
+photosynthetic rate of an untreated amphistomatous leaf
+(\(A_{\mathrm{amphi}}\)) over a range of \(g_\text{sw}\) values. We
+refer to this as an \(A \textendash g_\text{sw}\) curve, which is
+described in more detail below. We compared the
 \(A \textendash g_\text{sw}\) curve of the untreated leaf to the
 photosynthetic rate of pseudohypostomatous leaf (\(A_\mathrm{hypo}\)),
 which is the same leaf but with gas exchange through the upper surface
@@ -586,33 +620,39 @@ calculated as the log-response ratio of \(A\) compared at the same total
 
 \[\mathrm{AA} = \mathrm{log}(A_{\mathrm{amphi}} / A_{\mathrm{hypo}})\]
 
-The log-response ratio is easy to interpret because values above 0
-indicate a photosynthetic advantage of amphistomy, whereas values less
-than 0 indicate a disadvantage. The response ratio is also better than
-the absolute difference because it indicates a proportional change in
-\(A\), which facilitates comparisons across leaves and environments with
-different baseline photosynthetic rates. The irradiance of the light
-source in the pseudohypo leaf is higher because the propafilm reduces
-transmission. Because the propafilm reduces transmission, we used a
-higher incident \(\mathrm{PPFD}\) for pseudohypo leaves (higher by a
-factor 1/0.91, the inverse of the measured transmissivity of the
-propafilm). We also set the stomatal conductance ratio, for purposes of
-calculating boundary layer conductance, to 0 for pseudohypo leaves
+The log-response ratio is commonly used social and biological sciences
+(e.g. Hedges et al. (1999)). It is straightforward to interpret because
+values above 0 indicate a photosynthetic advantage of amphistomy,
+whereas values less than 0 indicate a disadvantage. The log-response
+ratio is preferable to the absolute difference because it indicates a
+proportional change in \(A\), which facilitates comparisons across
+leaves and environments with different baseline photosynthetic rates.
+The irradiance of the light source in the pseudohypo leaf was higher
+because the propafilm reduces transmission. To compensate for reduced
+transmission, we increased incident \(\mathrm{PPFD}\) for pseudohypo
+leaves by a factor 1/0.91, the inverse of the measured transmissivity of
+the propafilm. We also set the stomatal conductance ratio, for purposes
+of calculating boundary layer conductance, to 0 for pseudohypo leaves
 following manufacturer directions.
 
-To control for order effects, we alternated between starting with amphi
-(untreated) or pseudohypo (treated) leaf measurements. In the field, we
-acclimated the focal leaf to high light
-(\(\mathrm{PPFD} = 2000~\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}\)),
-high relative humidity (\(\mathrm{RH} = 70\%\)),
-\(T_\text{leaf} = 25-30~° \text{C}\), depending on ambient temperature,
-until \(A\) and \(g_\text{sw}\) reach their maximum. We used these data
-as our estimates of maximum \(A\) and \(g_\text{sw}\). After that, we
-decreased \(\mathrm{RH}\) to \(\approx 10\%\) to induce rapid stomatal
-closure without photosynthetic downregulation. All other environmental
-conditions in the leaf chamber remained the same. We logged data until
-\(g_\text{sw}\) reached its nadir. We then repeated the process with the
-other treatment (amphi or pseudohypo).
+\autoref{fig:ags-curve} illustrates our method for collecting
+\(A \textendash g_\text{sw}\) curves. We collected two curves per leaf,
+an amphi (untreated) curve and a pseudohypo (treated) curve. To control
+for order effects, we alternated between starting with amphi or
+pseudohypo leaf measurements. In the field, we acclimated the focal leaf
+to saturating light and high relative humidity (\(\mathrm{RH} = 70\%\)),
+as described above, until \(A\) and \(g_\text{sw}\) reach their maximum.
+We used these data as our estimates of maximum \(A\) and
+\(g_\text{sw}\). After that, we decreased \(\mathrm{RH}\) to
+\(\approx 10\%\) to induce rapid stomatal closure without biochemical
+downregulation. Hence, \(A_\text{amphi}\) and \(A_\text{hypo}\) were
+both measured at low chamber humidity after the leaf had acclimated to
+high humidity. All other environmental conditions in the leaf chamber
+remained the same. We logged data until \(g_\text{sw}\) reached its
+nadir. We then repeated the process of acclimating the leaf to 70\%
+\(\mathrm{RH}\) and inducing stomatal closure with low \(\mathrm{RH}\)
+with the other treatment (amphi or pseudohypo). We did not detect an
+effect of treatment order on \(\mathrm{AA}\) (results not shown).
 
 \hypertarget{data-analyis}{%
 \subsection{Data analysis ---}\label{data-analyis}}
@@ -626,28 +666,46 @@ It is not feasible to record \(A_\mathrm{amphi}\) and
 \(A_\mathrm{hypo}\) at the exact same \(g_\text{sw}\). To overcome this,
 we fit \(A \textendash g_\text{sw}\) curves using a linear regression of
 \(\text{log}(g_\mathrm{sw})\) on \(A\) to interpolate modeled \(A\) for
-amphi and pseudohypo leaves at the same \(g_\text{sw}\). In 10 of 12
-leaves, the minimum \(g_\text{sw}\) of the amphi curve was smaller than
-the maximum \(g_\text{sw}\) of the pseudohypo curve (i.e.~the curves
-overlapped for a range of \(g_\text{sw}\) values). In those cases, we
-estimated \(\mathrm{AA}\) at the \(g_\mathrm{sw}\) value in the middle
-of the range of overlap. In 2 of 12 leaves, the
+amphi and pseudohypo leaves at the same \(g_\text{sw}\). Let
+\(\hat{A}_\text{amphi}\) and \(\hat{A}_\text{hypo}\) be the estimated
+\(A\) of the amphi and pseudohypo leaves, respectively. We estimated
+these quantities at the same \(g_\mathrm{sw}\) using fitted parameters
+(\(\hat{\beta}\)'s):
+
+\[\hat{A}_\text{amphi} = \hat{\beta}_{0,\text{amphi}} + \hat{\beta}_{1,\text{amphi}} \times \text{log}(g_\mathrm{sw})\]
+\[\hat{A}_\text{hypo} = \hat{\beta}_{0,\text{hypo}} + \hat{\beta}_{1,\text{hypo}} \times \text{log}(g_\mathrm{sw})\]
+
+In 10 of 12 leaves, the minimum \(g_\text{sw}\) of the amphi curve was
+smaller than the maximum \(g_\text{sw}\) of the pseudohypo curve
+(i.e.~the curves overlapped for a range of \(g_\text{sw}\) values). In
+those cases, we estimated \(\hat{A}_\text{amphi}\) and
+\(\hat{A}_\text{hypo}\) at the \(g_\mathrm{sw}\) value in the middle of
+the range of overlap between the curves. In 2 of 12 leaves, the
 \(A \textendash g_\text{sw}\) curves did not quite overlap because the
 minimum \(g_\text{sw}\) of the amphi curve was slightly greater than the
 maximum \(g_\text{sw}\) of the pseudohypo curve. In those cases, we
 estimated \(\mathrm{AA}\) by extrapolating slightly,
 \(1.98\times 10^{-3}~\text{and}~3.29\times 10^{-3}~\text{mol}~\text{m}^{-2}~\text{s}^{-1}\),
 beyond the measured curves to the \(g_\mathrm{sw}\) value in between the
-curves. We fit Bayesian regressions using the \emph{R} package
-\textbf{brms} version 2.20.1 (Bürkner, 2017) with MCMC sampling in
-\emph{Stan} (Stan Development Team, 2023). We used CmdStan version
+curves. The vertical lines in \autoref{fig:licor} show the
+\(g_\text{sw}\) for each leaf. \(\mathrm{AA}\) for each leaf was
+calculated \(\hat{A}_\text{amphi}\) and \(\hat{A}_\text{hypo}\) using
+the log-response ratio shown above.
+
+To estimate \(\hat{\beta}\)'s from the \(A \textendash g_\text{sw}\)
+curve for each leaf, we fit Bayesian regressions using the \emph{R}
+package \textbf{brms} version 2.20.1 (Bürkner, 2017) with MCMC sampling
+in \emph{Stan} (Stan Development Team, 2023). We used CmdStan version
 2.33.0 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023) to
 interface with \emph{R} version 4.3.1 (R Core Team, 2023). We sampled
 the posterior distribution from 4 chains with 1000 iterations each after
-1000 warmup iterations. We estimated parameters and confidence intervals
-as the median and 95\% quantile intervals of the posterior,
+1000 warmup iterations per chain. We estimated parameters and confidence
+intervals as the median and 95\% quantile intervals of the posterior,
 respectively. The key prediction is that
-\(\mathrm{AA}_\text{coastal} > \mathrm{AA}_\text{montane}\).
+\(\mathrm{AA}_\text{coastal} > \mathrm{AA}_\text{montane}\), meaning the
+95\% confidence intervals of
+\(\mathrm{AA}_\text{coastal} - \mathrm{AA}_\text{montane}\) should be
+positive and not encompass 0.
 
 \hypertarget{objective-2a-are-coastal-leaves-thicker-than-montane-leaves}{%
 \subsubsection{Objective 2a: Are coastal leaves thicker than montane
@@ -662,16 +720,18 @@ package \textbf{brms} version 2.20.1 (Bürkner, 2017) to fit the model in
 \emph{Stan} (Stan Development Team, 2023) with CmdStan version 2.33.0
 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023). We
 sampled the posterior distribution from 4 chains with 1000 iterations
-each after 1000 warmup iterations. We estimated the relationship between
-population average leaf thickness and \(\mathrm{AA}\) measured from a
-single individual per population. We used this approach most of the
-variation in leaf thickness was among sites and the plant selected for
-gas exchange measurements was not always among the plants randomly
-selected for leaf thickness, precluding individual level correlation. We
-propagated uncertainty about in \(\mathrm{AA}\) and leaf thickness by
-integrating over the entire posterior distribution sample for each
-variable. The key prediction is that the effect of leaf thickness on
-\(\mathrm{AA}\) is positive.
+each after 1000 warmup iterations per chain. We estimated the
+relationship between population average leaf thickness and
+\(\mathrm{AA}\) measured from a single individual per population. We
+used this approach because most of the variation in leaf thickness was
+among sites and the plant selected for gas exchange measurements was not
+always among the plants randomly selected for leaf thickness, precluding
+individual level correlation. We propagated uncertainty about in
+\(\mathrm{AA}\) and leaf thickness estimates by integrating over the
+entire posterior distribution sample for each variable. The key
+prediction is that the effect of leaf thickness on \(\mathrm{AA}\) is
+positive, meaning the 95\% confidence interval of the slope should be
+positive and not encompass 0.
 
 \hypertarget{objective-2b-is-g_mathrmsmaxratio-closer-to-0.5-in-coastal-leaves-than-montane-leaves}{%
 \subsubsection{\texorpdfstring{Objective 2b: Is
@@ -694,27 +754,56 @@ version 2.33.0 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar,
 2023). We interpolated missing adaxial guard cell lengths from 6 out of
 185 samples with zero adaxial stomata using the ``mi'' function in
 \textbf{brms} package. We sampled the posterior distribution from 4
-chains with 1000 iterations each after 1000 warmup iterations. From each
-posterior sample, we calculated \(g_{\mathrm{smax,ratio}}\) as:
+chains with 1000 iterations each after 1000 warmup iterations per chain.
+From each posterior sample, we calculated \(g_{\mathrm{smax,ratio}}\)
+as:
 
 \[g_\mathrm{smax,ratio} = \frac{g_\mathrm{smax,upper}}{g_\mathrm{smax,lower} + g_\mathrm{smax,upper}},\]
+
 where \(g_\mathrm{smax,lower}\) and \(g_\mathrm{smax,upper}\) are
 maximum stomatal conductance to water vapor at
 \(T_\mathrm{leaf} = 25 ^ \circ\) C on the lower and upper surface,
-respectively. The maximum stomatal conductance is calculated from
+respectively. The maximum stomatal conductance was calculated from
 stomatal density and length, assuming that stomata are fully open,
-following Sack and Buckley (2016).
+following Sack and Buckley (2016):
+
+\[g_\mathrm{smax} = bmds^{0.5}.\] In this equation, \(b\) is a
+biophysical constant, \(m\) is a morphological constant, \(d\) is the
+stomatal density, and \(s\) is the stomatal complex area. We assume that
+\(b\), which is determined by the molecular species, temperature, and
+air pressure, is the same for both surfaces; we assume that \(m\), which
+is determined by guard cell allometry is also the same for both
+surfaces. Hence, the \(b\) and \(m\) constants cancel out of
+\(g_\mathrm{smax,ratio}\) and only density and length (\(l\)), which is
+proportional to the square root of area, affect the ratio:
+\(g_\mathrm{smax} \propto dl\).
 
 We estimated the relationship between leaf \(g_\mathrm{smax,ratio}\) and
 \(\mathrm{AA}\) measured from a single leaf per population. We
-propagated uncertainty about in \(\mathrm{AA}\) and
+propagated uncertainty about \(\mathrm{AA}\) and
 \(g_\mathrm{smax,ratio}\) by integrating over the entire posterior
 distribution sample for each variable. The key prediction is that the
 effect of \(g_\mathrm{smax,ratio}\) on \(\mathrm{AA}\) is positive until
+\(g_\mathrm{smax,ratio} < 0.5\), meaning the 95\% confidence interval of
+the slope should be positive and not encompass 0 in the domain
 \(g_\mathrm{smax,ratio} < 0.5\).
 
 \hypertarget{results}{%
 \section{RESULTS ---}\label{results}}
+
+Coastal ʻilima are surrounded by shorter vegetation than their montane
+counterparts (\autoref{fig:study-system}d; Welch Two Sample
+\emph{t}-test, \(t_{5.41} = 4.29\), \(P = 0.007\)). The montane site
+with the lowest vegetation height is a remnant dry forest (Koaiʻa tree
+sanctuary) in a matrix of cattle pasture, hence the satellite derived
+vegetation height may be lower than what existed prior to human
+disturbance. Habitats did not differ significantly in average solar
+radiation at the top of the canopy (\autoref{fig:study-system}d; Welch
+Two Sample \emph{t}-test, \(t_{9.93} = -1.89\), \(P = 0.089\)). Coastal
+habitats are significantly warmer (\autoref{fig:study-system}d; Welch
+Two Sample \emph{t}-test, \(t_{5.01} = -2.86\), \(P = 0.035\)) but mean
+annual precipitation is similar (\autoref{fig:study-system}d; Welch Two
+Sample \emph{t}-test, \(t_{6.15} = 2.21\), \(P = 0.068\)).
 
 \hypertarget{amphistomy-advantage-is-greater-in-coastal-leaves}{%
 \subsection{Amphistomy advantage is greater in coastal leaves
@@ -744,11 +833,13 @@ slightly, but not significantly higher in coastal leaves (Welch Two
 Sample \emph{t}-test, \(t_{9.65} = 1.6\), \(P = 0.14\)); total stomatal
 conductance was similar (Welch Two Sample \emph{t}-test,
 \(t_{9.71} = -0.09\), \(P = 0.93\)) in coastal and montane leaves
-(\autoref{fig:habitat-Ags}).
+(\autoref{fig:habitat-Ags}). Water-use efficiency
+(\(A / g_\mathrm{sw}\)) was significantly higher in coastal leaves
+(Welch Two Sample \emph{t}-test, \(t_{9.99} = 2.54\), \(P = 0.03\)).
 
 \begin{figure}[H]
   \includegraphics{../figures/habitat-aa.pdf}
-  \caption{Coastal leaves benefit more amphistomy than montane leaves. A positive amphistomy advantage ($y$-axis) means that the photosynthetic rate of an amphistomatous leaf is greater than that of an identical pseudohypostomatous leaf at the same overall $g_\mathrm{sw}$. Each point-interval is the median posterior estimate plus 95\% confidence interval of amphistomy advantage for that leaf. Each leaf is from a different montane (blue) or coastal (orange) site, arranged by habitat and ascending amphistomy advantage within habitat. The longer horizonal bars are the average amphistomy advantage for montane and coastal leaves. $g_\mathrm{sw}$, stomatal conductance to water vapor.}
+  \caption{Coastal leaves benefit more from amphistomy than montane leaves. A positive amphistomy advantage ($y$-axis) means that the photosynthetic rate of an amphistomatous leaf is greater than that of an identical pseudohypostomatous leaf at the same overall $g_\mathrm{sw}$. Each point-interval is the median posterior estimate plus 95\% confidence interval of amphistomy advantage for that leaf. Each leaf is from a different montane (blue) or coastal (orange) site, arranged by habitat and ascending amphistomy advantage within habitat. The longer horizonal bars are the average amphistomy advantage for montane and coastal leaves. $g_\mathrm{sw}$, stomatal conductance to water vapor.}
   \label{fig:habitat-aa}
 \end{figure}
 
@@ -805,15 +896,22 @@ in a given leaf. By experimentally blocking gas exchange through the
 upper surface in a controlled environment, we directly compared an
 amphistomatous leaf to an otherwise identical pseudohypostomatous leaf.
 This allows us to quantity the amphistomy advantage (\(\mathrm{AA}\))
-holding all else constant. Taking advantage of the of the steep climatic
+holding all else constant. Taking advantage of the steep climatic
 gradients in the Hawaiian archipelago, we applied this new method to
 show for the first time that sun leaves benefit 4 times more from
 amphistomy than shade leaves on ʻilima (\emph{Sida fallax}) plants
 (\(\mathrm{AA}_\text{coastal} = 0.12\)
-vs.~\(\mathrm{AA}_\text{montane} = 0.027\)). While this result has not
-yet been validated in other species, our results indicate that part of
-the reason amphistomatous leaves are found most commonly in high light
-habitats is that the adaptive benefit is greater in this environment.
+vs.~\(\mathrm{AA}_\text{montane} = 0.027\)). Coastal and montane ʻilima
+leaves are likely good representatives of classic sun and shade leaf
+syndromes because 1) they vary in traits like reflective pubescence
+(Ehleringer and Björkman, 1978) and leaf thickness (Terashima et al.,
+2001) that typically characterize sun-shade adaptation; and 2) since
+ʻilima shrubs are typically \(<1\)m tall, they are shaded by trees in
+montane, but not coastal habitats (\autoref{fig:study-system}d). While
+this result has not yet been validated in other species, our results
+indicate that part of the reason amphistomatous leaves are found most
+commonly in high light habitats is that the adaptive benefit is greater
+in this environment.
 
 If \(\mathrm{AA}\) is typically greater in sun leaves than shade leaves,
 it could partially explain the distribution of amphi- and hypostoamtous
@@ -826,13 +924,14 @@ partially support this hypothesis. Coastal ʻilima leaves with high
 \(\mathrm{AA}\) (\autoref{fig:habitat-aa}) are thicker than montane
 leaves, but the relationship between \(\mathrm{AA}\) and leaf thickness
 within habitats is actually slightly negative
-(\autoref{fig:traits-aa}A), opposite our prediction. Since coastal and
+(\autoref{fig:traits-aa}a), opposite our prediction. Since coastal and
 montane leaves differ in many respects besides thickness, we do not have
 enough data to conclude that leaf thickness explains the variation in
 \(\mathrm{AA}\) between habitats. Alternatively, other biochemical or
 anatomical differences between coastal and montane leaves may explain
 why \(\mathrm{AA}\) is greater in coastal leaves. The negative
-relationship between leaf thickness and \(\mathrm{AA}\) could be
+relationship, (albeit nonsignificant in that 95\% confidence intervals
+encompassed 0), between leaf thickness and \(\mathrm{AA}\) could be
 explained if thicker leaves compensated by having a more porous
 mesophyll and/or less tortuous airspaces (Théroux-Rancourt et al.,
 2021).
@@ -848,7 +947,7 @@ diffusion (Morison et al., 2005). Our results do not support this
 hypothesis. Montane leaves from Big Island sites had low
 \(g_\mathrm{smax,ratio}\) and low \(\mathrm{AA}\) whereas low montane
 leaves on Oʻahu had high \(g_\mathrm{smax,ratio}\), but similarly low
-\(\mathrm{AA}\) (\autoref{fig:traits-aa}B). Among coastal sites, the
+\(\mathrm{AA}\) (\autoref{fig:traits-aa}b). Among coastal sites, the
 site with the lowest \(g_\mathrm{smax,ratio}\) had the lowest
 \(\mathrm{AA}\), but there was little variation in
 \(g_\mathrm{smax,ratio}\) among coastal leaves in our sample. We
@@ -891,28 +990,34 @@ leaves. Selection on increased photosynthesis under similar conditions
 may explain why crops leaves tend to increase stomatal density ratio
 during domestication (Milla et al., 2013).
 
-Two limitations of this study are the small sample size and experimental
+Three limitations of this study are the small sample size, experimental
 design that precludes distinguishing genetic from environmental
-differences in leaf traits. Understanding the mechanistic basis of
-higher \(\mathrm{AA}\) in sun leaves would require much larger sample
-sizes. Sun leaves tend to be thicker, more densely packed with mesophyll
-cells, and have greater photosynthetic capacity and higher stomatal
-conductance, among other traits (Lambers et al., 2008). Each of these
-factors and others potentially modulate \(\mathrm{AA}\). Quantifying the
-contribution of all these factors requires larger samples and additional
-measurements that are beyond the scope of this study, but exciting
-avenues for future research on leaf structure-function relations.
-Although many morphological traits that distinguish coastal and montane
-ʻilima populations persist in a common environment (Yorkston and
-Daehler, 2006), we cannot distinguish between genetic effects and
-plastic responses to habitat as causes of difference in \(\mathrm{AA}\)
-because we measured naturally occurring plants \emph{in situ}. While
-disentangling genetic and plastic contributions is not necessarily
-important for understanding the distribution of amphistomatous leaves,
-it would be insightful to know about genetic and environmental
-contributions to trait variation. A reciprocal transplant would be able
-to determine the genetic and environmental contributions, as well their
-interaction, to trait variance in nature.
+differences in leaf traits, and potentially confounding effects of other
+environmental differences besides light environment. Understanding the
+mechanistic basis of higher \(\mathrm{AA}\) in sun leaves would require
+much larger sample sizes. Sun leaves tend to be thicker, more densely
+packed with mesophyll cells, and have greater photosynthetic capacity
+and higher stomatal conductance, among other traits (Lambers et al.,
+2008). Each of these factors and others potentially modulate
+\(\mathrm{AA}\). Quantifying the contribution of all these factors
+requires larger samples and additional measurements that are beyond the
+scope of this study, but exciting avenues for future research on leaf
+structure-function relations. Although many morphological traits that
+distinguish coastal and montane ʻilima populations persist in a common
+environment (Yorkston and Daehler, 2006), we cannot distinguish between
+genetic effects and plastic responses to habitat as causes of difference
+in \(\mathrm{AA}\) because we measured naturally occurring plants
+\emph{in situ}. While disentangling genetic and plastic contributions is
+not necessarily important for understanding the distribution of
+amphistomatous leaves, it would be insightful to know about genetic and
+environmental contributions to trait variation. A reciprocal transplant
+would be able to determine the genetic and environmental contributions,
+as well their interaction, to trait variance in nature. However,
+reciprocal transplants cannot control for other differences between
+coastal and montane habitats besides vegetation height, such as
+temperature. Experimental studies in controlled environments will be
+necessary to isolate the effect light quantity and quality on
+\(\mathrm{AA}\).
 
 \hypertarget{conclusions}{%
 \section{CONCLUSIONS ---}\label{conclusions}}
@@ -921,25 +1026,30 @@ This study reports the first direct experimental evidence that having
 stomata open on both leaf surfaces, amphistomy, increases photosynthesis
 for a given total stomatal conductance, particularly in leaves from the
 type of open, sunny habitats where this trait is most common. By
-developing a straightforward gas exchange method to block gas exchange
+developing a straightforward experimental method to block gas exchange
 through the upper surface, we directly compared the photosynthetic rate
 of a leaf with gas exchange through both surfaces or just one, holding
 all other factors constant. In doing so, we found that coastal leaves of
 the indigenous Hawaiian ʻilima (\emph{Sida fallax}) enjoyed a greater
 photosynthetic benefit from amphistomy than nearby montane leaves living
-in more closed forest. We cannot yet ascribe the difference in
-amphistomy advantage between coastal and montane leaves to particular
-physiological or anatomical variation, but this is a promising area for
-future research.
+in more closed forest. This is not because amphistomatous leaves
+necessarily have greater leaf surface available for stomata, although
+that likely influences realized photosynthetic rates in natural
+populations. Rather, our experiments show that coastal amphistomatous
+leaves with the same total leaf stomatal conductance photosynthesize
+more than identical hypostomatous leaves. We cannot yet ascribe the
+difference in amphistomy advantage between coastal and montane leaves to
+particular physiological or anatomical variation, but this is a
+promising area for future research.
 
 \hypertarget{acknowledgments}{%
 \section{Acknowledgments ---}\label{acknowledgments}}
 
 The authors thank Kasey Barton for feedback on an earlier version of
 this manuscript, the University of Hawaiʻi honors council for guidance
-to GT, Tawn Speetjens for access to one montane site, startup funds from
-the University of Hawaiʻi, NSF Award 1929167 to CDM, and NSF Award
-2307341 to TNB.
+to GT, Tawn Speetjens for access to one montane site, TM Perez for
+advice on leaf sectioning, startup funds from the University of Hawaiʻi,
+NSF Award 1929167 to CDM, and NSF Award 2307341 to TNB.
 
 \hypertarget{author-ontributions}{%
 \section{Author Contributions ---}\label{author-ontributions}}
@@ -975,6 +1085,12 @@ Information section at the end of the article.
 \setcounter{figure}{0}    
 \setcounter{table}{0}    
 \setcounter{equation}{0}
+
+\begin{figure}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  \label{fig:ags-curve}
+\end{figure}
 
 \begin{figure}
   \captionsetup{labelformat=empty}
@@ -1030,6 +1146,13 @@ Berry, J. A., D. J. Beerling, and P. J. Franks. 2010.
 \href{https://doi.org/10.1016/j.pbi.2010.04.013}{Stomata: Key players in
 the earth system, past and present}. \emph{Current Opinion in Plant
 Biology} 13: 232--239.
+
+\leavevmode\vadjust pre{\hypertarget{ref-blonder_leaf-area_2012}{}}%
+Blonder, B., V. Buzzard, I. Simova, L. Sloat, B. Boyle, R. Lipson, B.
+Aguilar-Beaucage, et al. 2012.
+\href{https://doi.org/10.3732/ajb.1200062}{The leaf-area shrinkage
+effect can bias paleoclimate and ecology research}. \emph{American
+Journal of Botany} 99: 1756--1763.
 
 \leavevmode\vadjust pre{\hypertarget{ref-de_boer_apparent_2016}{}}%
 Boer, H. J. de, P. L. Drake, E. Wendt, C. A. Price, E.-D. Schulze, N. C.
@@ -1087,6 +1210,12 @@ Drake, P. L., H. J. de Boer, S. J. Schymanski, and E. J. Veneklaas.
 Water and {CO}\(_{\textrm{2}}\) transport in hypostomatous and
 amphistomatous leaves}. \emph{New Phytologist} 222: 1179--1187.
 
+\leavevmode\vadjust pre{\hypertarget{ref-drake_smaller_2013}{}}%
+Drake, P. L., R. H. Froend, and P. J. Franks. 2013.
+\href{https://doi.org/10.1093/jxb/ers347}{Smaller, faster stomata:
+Scaling of stomatal size, rate of response, and stomatal conductance}.
+\emph{Journal of Experimental Botany} 64: 495--505.
+
 \leavevmode\vadjust pre{\hypertarget{ref-dunbar-co_leaf_2009}{}}%
 Dunbar-Co, S., M. J. Sporck, and L. Sack. 2009. Leaf trait
 diversification and design in seven rare taxa of the {Hawaiian}
@@ -1112,6 +1241,13 @@ Evans, J. R., R. Kaldenhoff, B. Genty, and I. Terashima. 2009.
 {CO}\(_{\textrm{2}}\) diffusion pathway inside leaves}. \emph{Journal of
 Experimental Botany} 60: 2235--2248.
 
+\leavevmode\vadjust pre{\hypertarget{ref-flexas_cell_2021}{}}%
+Flexas, J., M. J. Clemente-Moreno, J. Bota, T. J. Brodribb, J. Gago, Y.
+Mizokami, M. Nadal, et al. 2021.
+\href{https://doi.org/10.1093/jxb/erab144}{Cell wall thickness and
+composition are involved in photosynthetic limitation} P. Manavella
+{[}ed.{]},. \emph{Journal of Experimental Botany} 72: 3971--3986.
+
 \leavevmode\vadjust pre{\hypertarget{ref-foster_influence_1986}{}}%
 Foster, J. R., and W. K. Smith. 1986. Influence of stomatal distribution
 on transpiration in low-wind environments. \emph{Plant, Cell \&
@@ -1135,11 +1271,30 @@ Gabry, J., and R. Češnovar. 2023.
 \href{https://mc-stan.org/cmdstanr,\%20https://discourse.mc-stan.org}{Cmdstanr:
 {R} {Interface} to '{CmdStan}'}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-gago_photosynthesis_2020}{}}%
+Gago, J., D. M. Daloso, M. Carriquí, M. Nadal, M. Morales, W. L. Araújo,
+A. Nunes-Nesi, et al. 2020.
+\href{https://doi.org/10.1016/j.envexpbot.2020.104174}{The
+photosynthesis game is in the "inter-play": {Mechanisms} underlying
+{CO2} diffusion in leaves}. \emph{Environmental and Experimental Botany}
+178: 104174.
+
 \leavevmode\vadjust pre{\hypertarget{ref-gay_influence_1975}{}}%
 Gay, A. P., and R. G. Hurd. 1975.
 \href{https://doi.org/10.1111/j.1469-8137.1975.tb01368.x}{The influence
 of light on stomatal density in the tomato}. \emph{New Phytologist} 75:
 37--46.
+
+\leavevmode\vadjust pre{\hypertarget{ref-giambelluca_online_2013}{}}%
+Giambelluca, T. W., Q. Chen, A. G. Frazier, J. P. Price, Y.-L. Chen,
+P.-S. Chu, J. K. Eischeid, and D. M. Delparte. 2013.
+\href{https://doi.org/10.1175/BAMS-D-11-00228.1}{Online {Rainfall}
+{Atlas} of {Hawai}`i}. \emph{Bulletin of the American Meteorological
+Society} 94: 313--316.
+
+\leavevmode\vadjust pre{\hypertarget{ref-giambelluca_evapotranspiration_2014}{}}%
+Giambelluca, T. W., X. Shuai, M. L. Barnes, R. J. Alliss, R. J. Longman,
+T. Miura, Q. Chen, et al. 2014. Evapotranspiration of {Hawai}`i.
 
 \leavevmode\vadjust pre{\hypertarget{ref-gibson_structure-function_1996}{}}%
 Gibson, A. C. 1996.
@@ -1207,6 +1362,11 @@ Harwood, R., G. Théroux‐Rancourt, and M. M. Barbour. 2021.
 \href{https://doi.org/10.1111/pce.14079}{Understanding airspace in
 leaves: {3D} anatomy and directional tortuosity}. \emph{Plant, Cell \&
 Environment} 44: 2455--2465.
+
+\leavevmode\vadjust pre{\hypertarget{ref-hedges_meta-analysis_1999}{}}%
+Hedges, L. V., J. Gurevitch, and P. S. Curtis. 1999. The meta-analysis
+of response ratios in experimental ecology. \emph{Ecology} 80:
+1150--1156.
 
 \leavevmode\vadjust pre{\hypertarget{ref-hetherington_role_2003}{}}%
 Hetherington, A. M., and F. I. Woodward. 2003.
@@ -1290,6 +1450,12 @@ Márquez, D. A., H. Stuart‐Williams, L. A. Cernusak, and G. D. Farquhar.
 the surface of photosynthetic mesophyll cells}. \emph{New Phytologist}
 238: 1446--1460.
 
+\leavevmode\vadjust pre{\hypertarget{ref-marquez_cuticular_2022}{}}%
+Márquez, D. A., H. Stuart‐Williams, G. D. Farquhar, and F. A. Busch.
+2022. \href{https://doi.org/10.1111/nph.17588}{Cuticular conductance of
+adaxial and abaxial leaf surfaces and its relation to minimum leaf
+surface conductance}. \emph{New Phytologist} 233: 156--168.
+
 \leavevmode\vadjust pre{\hypertarget{ref-mckown_trait_2016}{}}%
 McKown, A. D., M. E. Akamine, and L. Sack. 2016.
 \href{https://doi.org/10.1007/s00442-016-3640-3}{Trait convergence and
@@ -1334,9 +1500,9 @@ high light intensity in \emph{{Ambrosia} cordifolia} ({Compositae}).
 
 \leavevmode\vadjust pre{\hypertarget{ref-muir_is_2019}{}}%
 Muir, C. D. 2019. \href{https://doi.org/10.1093/icb/icz085}{Is
-{Amphistomy} an {Adaptation} to {High} {Light}? {Optimality} {Models} of
-{Stomatal} {Traits} along {Light} {Gradients}}. \emph{Integrative and
-Comparative Biology} 59: 571--584.
+amphistomy an adaptation to high light? {Optimality} models of stomatal
+traits along light gradients}. \emph{Integrative and Comparative
+Biology} 59: 571--584.
 
 \leavevmode\vadjust pre{\hypertarget{ref-muir_light_2018}{}}%
 Muir, C. D. 2018. Light and growth form interact to shape stomatal ratio
@@ -1458,6 +1624,19 @@ trait variation. Ph.\{D\}. University of Hawaii.
 \leavevmode\vadjust pre{\hypertarget{ref-stan_development_team_stan_2023}{}}%
 Stan Development Team. 2023. \href{https://mc-stan.org}{Stan {Modeling}
 {Language} {Users} {Guide} and {Reference} {Manual}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-terashima_irradiance_2006}{}}%
+Terashima, I., Y. T. Hanba, Y. Tazoe, P. Vyas, and S. Yano. 2006.
+Irradiance and phenotype: Comparative eco-development of sun and shade
+leaves in relation to photosynthetic {CO}₂ diffusion. \emph{Journal of
+Experimental Botany} 57: 343--354.
+
+\leavevmode\vadjust pre{\hypertarget{ref-terashima_why_2001}{}}%
+Terashima, I., S.-I. Miyazawa, and Y. T. Hanba. 2001.
+\href{https://doi.org/10.1007/PL00013972}{Why are sun leaves thicker
+than shade leaves? --- {Consideration} based on analyses of
+{CO}\(_{\textrm{2}}\) diffusion in the leaf}. \emph{Journal of Plant
+Research} 114: 93--105.
 
 \leavevmode\vadjust pre{\hypertarget{ref-theroux-rancourt_maximum_2021}{}}%
 Théroux-Rancourt, G., A. B. Roddy, J. M. Earles, M. E. Gilbert, M. A.
