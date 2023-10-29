@@ -27,6 +27,10 @@ ggplot(site_Ags, aes(habitat, value, color = habitat)) +
   scale_color_manual(values = c("steelblue", "tomato"), guide = NULL)
 
 fit_habitat_Ags = site_Ags |>
+  select(site_code, site_type, name, value) |>
+  pivot_wider() |>
+  mutate(wue = A / gsw) |>
+  pivot_longer(A:wue) |>
   split(~ name) |>
   map(\(.x) {
     t.test(value ~ site_type, data = .x)

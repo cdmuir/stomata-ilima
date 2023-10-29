@@ -5,9 +5,12 @@ data: processed-data/licor.rds processed-data/site.rds processed-data/trait.rds 
 model: objects/fit_licor.rds objects/fit_stomata.rds objects/fit_thickness.rds
 paper: ms/ms.pdf ms/si.pdf
 
-ms/ms.pdf: ms/ms.qmd ms/stomata-ilima.bib figures/habitat-aa.pdf figures/habitat-Ags.pdf figures/habitat-gmaxratio.pdf figures/licor.pdf figures/pp-licor.pdf figures/traits-aa.pdf processed-data/licor.rds objects/fit-licor.rds objects/fit_stomata.rds objects/fit_thickness.rds objects/habitat_aa.rds objects/habitat_aa1.rds objects/coef_thickness_aa.rds objects/gmaxratio_sitetype.rds objects/coef_gmaxratio_aa.rds objects/fit_habitat_Ags.rds objects/sum_data.rds r/header.R r/functions.R
+ms/ms.pdf: ms/ms.qmd ms/stomata-ilima.bib figures/ags-curve.pdf figures/habitat-aa.pdf figures/habitat-Ags.pdf figures/habitat-gmaxratio.pdf figures/licor.pdf figures/pp-licor.pdf figures/traits-aa.pdf processed-data/licor.rds objects/fit-licor.rds objects/fit_stomata.rds objects/fit_thickness.rds objects/habitat_aa.rds objects/habitat_aa1.rds objects/coef_thickness_aa.rds objects/gmaxratio_sitetype.rds objects/coef_gmaxratio_aa.rds objects/fit_habitat_Ags.rds objects/sum_data.rds r/header.R r/functions.R
 	quarto render ms/ms.qmd
 	quarto render ms/si.qmd
+
+figures/ags-curve.pdf: r/18_plot-ags-curve.R
+	Rscript -e 'source("r/18_plot-ags-curve.R")'
 
 figures/habitat-aa.pdf: processed-data/site.rds objects/aa.rds
 	Rscript -e 'source("r/08_plot-habitat-aa.R")'
@@ -99,6 +102,7 @@ clean:
 cleanall: 
 	\rm -f *.aux *.bbl *.blg *.log *.pdf *~ *.Rout */*~ */*.Rout ms/ms.pdf ms/ms.tex ms/si.pdf ms/si.tex objects/*.rds objects/*.csv processed-data/*.rds */*.aux */*.log 
 	\rm -f dryad/stomata-ilima.csv
+	\rm -f figures/ags-curve.pdf
 	\rm -f figures/habitat-aa.pdf
 	\rm -f figures/habitat-Ags.pdf
 	\rm -f figures/habitat-climate.pdf

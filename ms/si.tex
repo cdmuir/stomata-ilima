@@ -197,7 +197,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, interior hidden, enhanced, frame hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, enhanced, frame hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand\thefigure{S\arabic{figure}}    
 \renewcommand\thetable{S\arabic{table}}    
@@ -241,6 +241,14 @@ Waʻahila ridge & Oʻahu & montane & 346.75 & 150.26 & 17.76 & 20.61 & 193.33 & 
 \bottomrule
 \end{longtable}
 \end{landscape}
+
+\newpage
+
+\begin{figure}
+  \includegraphics{../figures/ags-curve.pdf}
+  \caption{Idealized method for collecting $A \textendash g_\text{sw}$ curves on either amphi or pseudohypo leaves. A) After clamping the leaf into the LI-6800 chamber, it acclimates to high light ($\mathrm{PPFD} = 2000~\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}$) and humidity ($\mathrm{RH} = 70\%$). This induces stomata to open, increasing $g_\mathrm{sw}$ and $A$ until they reach a maximum. We abruptly lower the chamber humidity to $\approx 10\%$ to close stomata and log data (black points) until $g_\mathrm{sw}$ and $A$ reach their nadir. B) We fit $A \textendash g_\text{sw}$ curves to logged data points. The asterisk in both panels indicates the data point used for maximum $A$ and $g_\mathrm{sw}$. C) $\mathrm{AA}$ is low (left panel) when the photosynthetic rate of an amphi leaf is similar to a pseudohypo leaf at the same total $g_\mathrm{sw}$ ($x$-axes); large $\mathrm{AA}$ (right panel) is indicated when an amphi leaf has a higher photosynthetic rate than a pseudohypo leaf. Abbreviations: $A$ is the photosynthetic rate; $\mathrm{AA}$ is the amphistomy advantage; $g_\mathrm{sw}$ is the stomatal conductance to water vapor; $\mathrm{PPFD}$ is photosynthetic photon flux density; $\mathrm{RH}$ is relative humidity.}
+  \label{fig:ags-curve}
+\end{figure}
 
 \newpage
 
