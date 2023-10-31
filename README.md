@@ -6,7 +6,7 @@ Amphistomy increases leaf photosynthesis more in coastal than montane plants of 
 
 ## Author contributions
 
-Genevieve Triplett and [Chris Muir](https://cdmuir.netlify.app) and CDM contributed equally to all stages of this project; [Tom Buckley](https://buckleylab.ucdavis.edu/) contributed to development of the method and helped edit the manuscript.
+Genevieve Triplett and [Chris Muir](https://cdmuir.netlify.app) contributed equally to all stages of this project; [Tom Buckley](https://buckleylab.ucdavis.edu/) contributed to development of the method and helped edit the manuscript.
 
 ## Contents
 

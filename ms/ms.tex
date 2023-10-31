@@ -109,12 +109,12 @@
 
 % toggle line numbers
 \usepackage{lineno}
-\linenumbers
+% \linenumbers
 
 % toggle spacing
 \usepackage{setspace}
-% \singlespacing
-\doublespacing
+\singlespacing
+% \doublespacing
 
 % Hawaiian language characters
 % https://tex.stackexchange.com/questions/424535/how-to-type-a-proper-hawai%CA%BBian-%CA%BBokina
@@ -230,7 +230,7 @@ montane plants of Hawaiian ʻilima (\emph{Sida fallax})}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
 
 \begin{center}
 Genevieve Triplett$^1$, Thomas N. Buckley$^2$, Christopher D. Muir$^{1,3,*}$
@@ -265,13 +265,15 @@ Understanding why amphistomy evolves can inform its potential as a
 target for crop improvement and paleoenvironment reconstruction.
 
 \textbf{Methods} We developed a new method to quantify ``amphistomy
-advantage'', \(\mathrm{AA}\), as the ratio of photosynthesis in an
-amphistomatous leaf to that of the same leaf with the same total
-stomatal conductance but with gas exchange blocked through the upper
-(adaxial) surface, which we term ``pseudohypostomy''. We thus estimated
-\(\mathrm{AA}\) and related physiological and anatomical traits in 12
-populations, six coastal (open, sunny) and six montane (closed, shaded),
-of the indigenous Hawaiian species ʻilima (\emph{Sida fallax}).
+advantage'', \(\mathrm{AA}\), as the log-ratio of photosynthesis in an
+amphistomatous leaf to that of the same leaf but with gas exchange
+blocked through the upper (adaxial) surface, which we term
+``pseudohypostomy''. We used humidity to modulate stomatal conductance
+and thus compare photosynthetic rates at the same total stomatal
+conductance. We estimated \(\mathrm{AA}\) and related physiological and
+anatomical traits in 12 populations, six coastal (open, sunny) and six
+montane (closed, shaded), of the indigenous Hawaiian species ʻilima
+(\emph{Sida fallax}).
 
 \textbf{Key results} Coastal ʻilima leaves benefit 4 times more from
 amphistomy compared to their montane counterparts. Our evidence was
@@ -418,10 +420,12 @@ to that of an otherwise identical hypostomatous leaf with the same total
 stomatal conductance under the same conditions. We propose a
 straightforward method to do this by experimentally creating a
 pseudohypostomatous leaf with gas exchange blocked through the upper
-surface (see Materials and Methods). One reason that sun leaves might
-have greater \(\mathrm{AA}\) is that they are usually thicker or denser
-(Poorter et al., 2019), which will often result in lower
-\(g_\mathrm{ias}\) either by increasing the diffusion path length
+surface (see Materials and Methods). We use humidity to modulate
+stomatal conductance so that amphi- and pseudohypostomatous leaves can
+be compared at the same total stomatal conductance. One reason that sun
+leaves might have greater \(\mathrm{AA}\) is that they are usually
+thicker or denser (Poorter et al., 2019), which will often result in
+lower \(g_\mathrm{ias}\) either by increasing the diffusion path length
 (Parkhurst, 1978) or making the airspace less porous. A nonmutually
 exclusive hypothesis is that if sun leaves have a stomatal density ratio
 closer to 0.5 (same density on each leaf surface), this will confer a
@@ -1045,11 +1049,12 @@ promising area for future research.
 \hypertarget{acknowledgments}{%
 \section{Acknowledgments ---}\label{acknowledgments}}
 
-The authors thank Kasey Barton for feedback on an earlier version of
-this manuscript, the University of Hawaiʻi honors council for guidance
-to GT, Tawn Speetjens for access to one montane site, TM Perez for
-advice on leaf sectioning, startup funds from the University of Hawaiʻi,
-NSF Award 1929167 to CDM, and NSF Award 2307341 to TNB.
+The authors thank Kasey Barton and two anonymous reviewers for feedback
+on an earlier version of this manuscript, the University of Hawaiʻi
+honors council for guidance to GT, Tawn Speetjens for access to one
+montane site, TM Perez for advice on leaf sectioning, startup funds from
+the University of Hawaiʻi, NSF Award 1929167 to CDM, and NSF Award
+2307341 to TNB.
 
 \hypertarget{author-ontributions}{%
 \section{Author Contributions ---}\label{author-ontributions}}
@@ -1350,15 +1355,15 @@ leaves incorporating {CO}\(_{\textrm{2}}\) transport, propagation of
 radiation, and biochemistry 2. Ecological and agricultural utility.
 \emph{Photosynthetica} 18: 569--595.
 
-\leavevmode\vadjust pre{\hypertarget{ref-harrison_ecoevolutionary_2021}{}}%
+\leavevmode\vadjust pre{\hypertarget{ref-harrison_eco-evolutionary_2021}{}}%
 Harrison, S. P., W. Cramer, O. Franklin, I. C. Prentice, H. Wang, Å.
 Brännström, H. Boer, et al. 2021.
-\href{https://doi.org/10.1111/nph.17558}{Eco‐evolutionary optimality as
-a means to improve vegetation and land‐surface models}. \emph{New
+\href{https://doi.org/10.1111/nph.17558}{Eco-evolutionary optimality as
+a means to improve vegetation and land-surface models}. \emph{New
 Phytologist} 231: 2125--2141.
 
 \leavevmode\vadjust pre{\hypertarget{ref-harwood_understanding_2021}{}}%
-Harwood, R., G. Théroux‐Rancourt, and M. M. Barbour. 2021.
+Harwood, R., G. Théroux-Rancourt, and M. M. Barbour. 2021.
 \href{https://doi.org/10.1111/pce.14079}{Understanding airspace in
 leaves: {3D} anatomy and directional tortuosity}. \emph{Plant, Cell \&
 Environment} 44: 2455--2465.
@@ -1443,15 +1448,13 @@ Lyshede, O. B. 2002. Comparative and functional leaf anatomy of selected
 of the Linnean Society} 140: 261--272.
 
 \leavevmode\vadjust pre{\hypertarget{ref-marquez_assessing_2023}{}}%
-Márquez, D. A., H. Stuart‐Williams, L. A. Cernusak, and G. D. Farquhar.
+Márquez, D. A., H. Stuart-Williams, L. A. Cernusak, and G. D. Farquhar.
 2023. \href{https://doi.org/10.1111/nph.18784}{Assessing the
-{\textless{}}span style="font-variant:small-caps;"{\textgreater{}} {CO}
-\(_{\textrm{2}}\) {\textless{}}/span{\textgreater{}} concentration at
-the surface of photosynthetic mesophyll cells}. \emph{New Phytologist}
-238: 1446--1460.
+{CO}\(_{\textrm{2}}\) concentration at the surface of photosynthetic
+mesophyll cells}. \emph{New Phytologist} 238: 1446--1460.
 
 \leavevmode\vadjust pre{\hypertarget{ref-marquez_cuticular_2022}{}}%
-Márquez, D. A., H. Stuart‐Williams, G. D. Farquhar, and F. A. Busch.
+Márquez, D. A., H. Stuart-Williams, G. D. Farquhar, and F. A. Busch.
 2022. \href{https://doi.org/10.1111/nph.17588}{Cuticular conductance of
 adaxial and abaxial leaf surfaces and its relation to minimum leaf
 surface conductance}. \emph{New Phytologist} 233: 156--168.
@@ -1628,8 +1631,8 @@ Stan Development Team. 2023. \href{https://mc-stan.org}{Stan {Modeling}
 \leavevmode\vadjust pre{\hypertarget{ref-terashima_irradiance_2006}{}}%
 Terashima, I., Y. T. Hanba, Y. Tazoe, P. Vyas, and S. Yano. 2006.
 Irradiance and phenotype: Comparative eco-development of sun and shade
-leaves in relation to photosynthetic {CO}₂ diffusion. \emph{Journal of
-Experimental Botany} 57: 343--354.
+leaves in relation to photosynthetic {CO}\(_{\textrm{2}}\) diffusion.
+\emph{Journal of Experimental Botany} 57: 343--354.
 
 \leavevmode\vadjust pre{\hypertarget{ref-terashima_why_2001}{}}%
 Terashima, I., S.-I. Miyazawa, and Y. T. Hanba. 2001.
