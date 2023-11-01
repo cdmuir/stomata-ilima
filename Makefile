@@ -5,7 +5,7 @@ data: processed-data/licor.rds processed-data/site.rds processed-data/trait.rds 
 model: objects/fit_licor.rds objects/fit_stomata.rds objects/fit_thickness.rds
 paper: ms/ms.pdf ms/si.pdf
 
-ms/ms.pdf: ms/ms.qmd ms/stomata-ilima.bib figures/ags-curve.pdf figures/habitat-aa.pdf figures/habitat-Ags.pdf figures/habitat-gmaxratio.pdf figures/licor.pdf figures/pp-licor.pdf figures/traits-aa.pdf processed-data/licor.rds objects/fit-licor.rds objects/fit_stomata.rds objects/fit_thickness.rds objects/habitat_aa.rds objects/habitat_aa1.rds objects/coef_thickness_aa.rds objects/gmaxratio_sitetype.rds objects/coef_gmaxratio_aa.rds objects/fit_habitat_Ags.rds objects/sum_data.rds r/header.R r/functions.R
+ms/ms.pdf: ms/ms.qmd ms/stomata-ilima.bib figures/ags-curve.pdf figures/habitat-aa.pdf figures/habitat-Ags.pdf figures/habitat-gmaxratio.pdf figures/habitat-climate.pdf figures/licor.pdf figures/pp-licor.pdf figures/traits-aa.pdf processed-data/licor.rds objects/fit-licor.rds objects/fit_stomata.rds objects/fit_thickness.rds objects/habitat_aa.rds objects/habitat_aa1.rds objects/coef_thickness_aa.rds objects/gmaxratio_sitetype.rds objects/coef_gmaxratio_aa.rds objects/fit_habitat_Ags.rds objects/sum_data.rds objects/habitat-climate-stats.rds r/header.R r/functions.R
 	quarto render ms/ms.qmd
 	quarto render ms/si.qmd
 
@@ -48,7 +48,7 @@ objects/fit_thickness.rds: processed-data/trait.rds
 objects/aa.rds: processed-data/licor.rds objects/fit_licor.rds
 	Rscript -e 'source("r/06_estimate-aa.R")'
 
-objects/df_stat.rds: processed-data/trait.rds
+objects/habitat-climate-stats.rds: processed-data/trait.rds
 	Rscript -e 'source("r/16_fit-habitat-climate.R")'
 
 objects/habitat_aa.rds: processed-data/site.rds objects/aa.rds

@@ -1,12 +1,6 @@
 # Join data sheets for analysis
 source("r/header.R")
 
-# Climate rasters
-# Extract climate data
-dir = "raw-data/climate"
-tair_ann = raster::raster(glue("{dir}/Tair_month_raster/tair_ann"))
-sl_mst_ann = raster::raster(glue("{dir}/SoilMoisture_month_raster/sl_mst_ann"))
-
 # Read in raw data ----
 site = read_csv("raw-data/site.csv", col_types = "ccccccDdddd")
 
@@ -87,19 +81,6 @@ assert_numeric(leaf_thickness$leaf_thickness_pixels, lower = 0, upper = 500,
 assert_numeric(leaf_thickness$leaf_thickness_um, lower = 0, upper = 500, 
                any.missing = FALSE)
 
-# Add climate data to site ----
-site1 = site |>
-  mutate(
-    tair_ann = raster::extract(
-      tair_ann, 
-      cbind(longitude_degree, latitude_degree)
-    ),
-    sl_mst_ann = raster::extract(
-      sl_mst_ann, 
-      cbind(longitude_degree, latitude_degree)
-    )
-  )
-
 # Summarize multiple measurements ----
 stomata_size1 = stomata_size |>
   group_by(site_code, individual, leaf_number, surface) |>
@@ -124,7 +105,7 @@ stomata_density |>
   full_join(stomata_size1, by = c("site_code", "individual", "leaf_number")) |>
   full_join(leaf_thickness1, by = c("site_code", "individual")) |>
   full_join(plant, by = c("site_code", "individual")) |>
-  left_join(site1, by = "site_code", suffix = c("_plant", "_site")) |>
+  left_join(site, by = "site_code", suffix = c("_plant", "_site")) |>
   left_join(licor_leaf, by = join_by(site_code, individual, leaf_number)) |>
   mutate(licor_leaf = ifelse(is.na(licor_leaf), FALSE, licor_leaf)) |>
   
