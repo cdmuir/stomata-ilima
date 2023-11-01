@@ -1,6 +1,10 @@
 source("r/header.R")
 
 trait = read_rds("processed-data/trait.rds") |>
+  full_join(read_rds("processed-data/site.rds"),
+            by = join_by(site_code, site, label, alias, site_type, island,
+                         date_sampled, latitude_degree, longitude_degree,
+                         leaf_area_chamber_cm2)) |>
   summarize(
     site_type = first(site_type),
     `MAT~group('[', paste(phantom()*degree, 'C'), ']')` = first(tair_ann),
