@@ -86,12 +86,12 @@
 
 % toggle line numbers
 \usepackage{lineno}
-\linenumbers
+% \linenumbers
 
 % toggle spacing
 \usepackage{setspace}
-% \singlespacing
-\doublespacing
+\singlespacing
+% \doublespacing
 
 % Hawaiian language characters
 % https://tex.stackexchange.com/questions/424535/how-to-type-a-proper-hawai%CA%BBian-%CA%BBokina
@@ -197,7 +197,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable, frame hidden, interior hidden, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, sharp corners, interior hidden, enhanced, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand\thefigure{S\arabic{figure}}    
 \renewcommand\thetable{S\arabic{table}}    

@@ -18,9 +18,8 @@ licor2 = licor |>
   select(-matches("^(max|min)_(one|two)-sided$")) |>
   mutate(i = row_number())
 
-# fit_licor_draws = prepare_predictions(fit_licor)
-# ndraw = fit_licor_draws$ndraws
-ndraw = 4000
+fit_licor_draws = prepare_predictions(fit_licor)
+ndraw = fit_licor_draws$ndraws
 
 pred_licor2 = predict(fit_licor, new = licor2, summary = FALSE, ndraws = ndraw)
 

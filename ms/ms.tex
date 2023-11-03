@@ -230,7 +230,7 @@ montane plants of Hawaiian ʻilima (\emph{Sida fallax})}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, interior hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \begin{center}
 Genevieve Triplett$^1$, Thomas N. Buckley$^2$, Christopher D. Muir$^{1,3,*}$
@@ -275,7 +275,7 @@ anatomical traits in 12 populations, six coastal (open, sunny) and six
 montane (closed, shaded), of the indigenous Hawaiian species ʻilima
 (\emph{Sida fallax}).
 
-\textbf{Key results} Coastal ʻilima leaves benefit 4 times more from
+\textbf{Key results} Coastal ʻilima leaves benefit 4.04 times more from
 amphistomy compared to their montane counterparts. Our evidence was
 equivocal with respect to two hypotheses -- that coastal leaves benefit
 more because 1) they are thicker and therefore have lower CO\(_2\)
@@ -288,7 +288,7 @@ amphistomy \emph{per se} increases photosynthesis, consistent with the
 hypothesis that parallel pathways through upper and lower mesophyll
 increase the supply of CO\(_2\) to chloroplasts. The prevalence of
 amphistomatous leaves in open, sunny habitats can partially be explained
-the increased benefit of amphistomy in ʻsunʻ leaves, but the mechanistic
+the increased benefit of amphistomy in `sun' leaves, but the mechanistic
 basis of this observation is an area for future research.
 
 \textbf{Keywords:} amphstomy, leaf, light, Hawaiʻi, \emph{Sida fallax},
@@ -643,20 +643,21 @@ following manufacturer directions.
 \(A \textendash g_\text{sw}\) curves. We collected two curves per leaf,
 an amphi (untreated) curve and a pseudohypo (treated) curve. To control
 for order effects, we alternated between starting with amphi or
-pseudohypo leaf measurements. In the field, we acclimated the focal leaf
-to saturating light and high relative humidity (\(\mathrm{RH} = 70\%\)),
-as described above, until \(A\) and \(g_\text{sw}\) reach their maximum.
-We used these data as our estimates of maximum \(A\) and
-\(g_\text{sw}\). After that, we decreased \(\mathrm{RH}\) to
-\(\approx 10\%\) to induce rapid stomatal closure without biochemical
-downregulation. Hence, \(A_\text{amphi}\) and \(A_\text{hypo}\) were
-both measured at low chamber humidity after the leaf had acclimated to
-high humidity. All other environmental conditions in the leaf chamber
-remained the same. We logged data until \(g_\text{sw}\) reached its
-nadir. We then repeated the process of acclimating the leaf to 70\%
-\(\mathrm{RH}\) and inducing stomatal closure with low \(\mathrm{RH}\)
-with the other treatment (amphi or pseudohypo). We did not detect an
-effect of treatment order on \(\mathrm{AA}\) (results not shown).
+pseudohypo leaf measurements, though we did not detect an effect of
+treatment order on \(\mathrm{AA}\) (results not shown). In the field, we
+acclimated the focal leaf to saturating light and high relative humidity
+(\(\mathrm{RH} = 70\%\)), as described above, until \(A\) and
+\(g_\text{sw}\) reach their maximum. We used these data as our estimates
+of maximum \(A\) and \(g_\text{sw}\). After that, we decreased
+\(\mathrm{RH}\) to \(\approx 10\%\) to induce rapid stomatal closure
+without biochemical downregulation. Hence, \(A_\text{amphi}\) and
+\(A_\text{hypo}\) were both measured at low chamber humidity after the
+leaf had acclimated to high humidity. All other environmental conditions
+in the leaf chamber remained the same. We logged data until
+\(g_\text{sw}\) reached its nadir. We then repeated the process of
+acclimating the leaf to 70\% \(\mathrm{RH}\) and inducing stomatal
+closure with low \(\mathrm{RH}\) with the other treatment (amphi or
+pseudohypo).
 
 \hypertarget{data-analyis}{%
 \subsection{Data analysis ---}\label{data-analyis}}
@@ -692,15 +693,15 @@ estimated \(\mathrm{AA}\) by extrapolating slightly,
 \(1.98\times 10^{-3}~\text{and}~3.29\times 10^{-3}~\text{mol}~\text{m}^{-2}~\text{s}^{-1}\),
 beyond the measured curves to the \(g_\mathrm{sw}\) value in between the
 curves. The vertical lines in \autoref{fig:licor} show the
-\(g_\text{sw}\) for each leaf. \(\mathrm{AA}\) for each leaf was
-calculated \(\hat{A}_\text{amphi}\) and \(\hat{A}_\text{hypo}\) using
+\(g_\text{sw}\) for each leaf. We estimated \(\mathrm{AA}\) from
+\(\hat{A}_\text{amphi}\) and \(\hat{A}_\text{hypo}\) for each leaf using
 the log-response ratio shown above.
 
 To estimate \(\hat{\beta}\)'s from the \(A \textendash g_\text{sw}\)
 curve for each leaf, we fit Bayesian regressions using the \emph{R}
-package \textbf{brms} version 2.20.1 (Bürkner, 2017) with MCMC sampling
+package \textbf{brms} version 2.20.4 (Bürkner, 2017) with MCMC sampling
 in \emph{Stan} (Stan Development Team, 2023). We used CmdStan version
-2.33.0 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023) to
+2.33.1 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023) to
 interface with \emph{R} version 4.3.1 (R Core Team, 2023). We sampled
 the posterior distribution from 4 chains with 1000 iterations each after
 1000 warmup iterations per chain. We estimated parameters and confidence
@@ -720,8 +721,8 @@ We tested whether leaf thickness (log-transformed) varied between
 coastal and montane populations and among individuals within populations
 using a Bayesian mixed-effects model with habitat as a fixed effect and
 individual plant and site as random effects. We used the \emph{R}
-package \textbf{brms} version 2.20.1 (Bürkner, 2017) to fit the model in
-\emph{Stan} (Stan Development Team, 2023) with CmdStan version 2.33.0
+package \textbf{brms} version 2.20.4 (Bürkner, 2017) to fit the model in
+\emph{Stan} (Stan Development Team, 2023) with CmdStan version 2.33.1
 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023). We
 sampled the posterior distribution from 4 chains with 1000 iterations
 each after 1000 warmup iterations per chain. We estimated the
@@ -752,9 +753,9 @@ latent stomatal density and a parameter \(\phi\) to estimate
 overdispersion in counts relative to a Poisson model. For all traits,
 the explanatory variables were habitat as a fixed effect and leaf within
 individual plant, individual plant, and site as random effects. We used
-the \emph{R} package \textbf{brms} version 2.20.1 (Bürkner, 2017) to fit
+the \emph{R} package \textbf{brms} version 2.20.4 (Bürkner, 2017) to fit
 the model in \emph{Stan} (Stan Development Team, 2023) with CmdStan
-version 2.33.0 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar,
+version 2.33.1 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar,
 2023). We interpolated missing adaxial guard cell lengths from 6 out of
 185 samples with zero adaxial stomata using the ``mi'' function in
 \textbf{brms} package. We sampled the posterior distribution from 4
@@ -797,17 +798,17 @@ the slope should be positive and not encompass 0 in the domain
 
 Coastal ʻilima are surrounded by shorter vegetation than their montane
 counterparts (\autoref{fig:study-system}d; Welch Two Sample
-\emph{t}-test, \(t_{5.41} = 4.29\), \(P = 0.007\)). The montane site
+\emph{t}-test, \(t_{6.67} = 5.13\), \(P = 0.002\)). The montane site
 with the lowest vegetation height is a remnant dry forest (Koaiʻa tree
 sanctuary) in a matrix of cattle pasture, hence the satellite derived
 vegetation height may be lower than what existed prior to human
 disturbance. Coastal sites receive greater average solar radiation at
 the top of the canopy (\autoref{fig:study-system}d; Welch Two Sample
-\emph{t}-test, \(t_{9.93} = -1.89\), \(P = 0.089\)); coastal sites are
+\emph{t}-test, \(t_{10.86} = -2.22\), \(P = 0.049\)); coastal sites are
 significantly warmer (\autoref{fig:study-system}d; Welch Two Sample
-\emph{t}-test, \(t_{5.01} = -2.86\), \(P = 0.035\)); and coastal sites
+\emph{t}-test, \(t_{6.01} = -2.96\), \(P = 0.025\)); and coastal sites
 receive less precipitation (\autoref{fig:study-system}d; Welch Two
-Sample \emph{t}-test, \(t_{6.15} = 2.21\), \(P = 0.068\)).
+Sample \emph{t}-test, \(t_{7.45} = 2.73\), \(P = 0.028\)).
 
 \hypertarget{amphistomy-advantage-is-greater-in-coastal-leaves}{%
 \subsection{Amphistomy advantage is greater in coastal leaves
@@ -820,18 +821,18 @@ coastal leaves, but only 1 of 6 montane leaves
 (\autoref{fig:habitat-aa}; see \autoref{fig:licor} for individual
 curves). Overall, the average \(\mathrm{AA}\) among coastal and montane
 leaves is \(0.12~[\numrange{0.077}{0.15}]\) and
-\(0.027~[\numrange{-0.0044}{0.057}]\), respectively; the difference in
+\(0.027~[\numrange{-0.0034}{0.057}]\), respectively; the difference in
 average \(\mathrm{AA}\) between habitat types is
-\(\mathrm{AA}_\text{coastal} - \mathrm{AA}_\text{montane} = 0.089~[\numrange{0.04}{0.14}]\).
+\(\mathrm{AA}_\text{coastal} - \mathrm{AA}_\text{montane} = 0.09~[\numrange{0.039}{0.14}]\).
 Posterior predictions closely match observed values of \(A\)
 (\autoref{fig:pp-licor}), indicating an adequate model fit from which we
 can interpolate between measurements reliably. It also suggests that
 slight extrapolation beyond the data should be reliable, but this is
-less certain. When we remove two leaves where extrapolated slightly
+less certain. When we remove two leaves where we extrapolated slightly
 beyond fitted \(A \textendash g_\mathrm{sw}\) curves, we estimate that
 \(\mathrm{AA}_\text{coastal}\) is still positive,
-\(0.081~[\numrange{0.022}{0.14}]\), but the difference between coastal
-and montane leaves is smaller, \(0.053~[\numrange{-0.011}{0.12}]\), and
+\(0.081~[\numrange{0.023}{0.13}]\), but the difference between coastal
+and montane leaves is smaller, \(0.053~[\numrange{-0.012}{0.12}]\), and
 confidence intervals slightly overlap 0. Maximum photosynthetic rate was
 slightly, but not significantly higher in coastal leaves (Welch Two
 Sample \emph{t}-test, \(t_{9.65} = 1.6\), \(P = 0.14\)); total stomatal
@@ -857,7 +858,7 @@ thicker than their montane counterparts. Although coastal leaves are
 thicker and have greater \(\mathrm{AA}\), there is little relationship
 between leaf thickness and \(\mathrm{AA}\) within habitats
 (\autoref{fig:traits-aa}A;
-\(\text{slope}~= -0.11~[\numrange{-0.27}{0.036}]\)).
+\(\text{slope}~= -0.11~[\numrange{-0.28}{0.035}]\)).
 
 \hypertarget{g_mathrmsmaxratio-is-not-associated-with-amphistomy-advantage}{%
 \subsection{\texorpdfstring{\(g_\mathrm{smax,ratio}\) is not associated
@@ -879,7 +880,7 @@ montane sites where those on the Big Island of Hawaiʻi all have low
 \(g_\mathrm{smax,ratio}\). There is no relationship between
 \(g_\mathrm{smax,ratio}\) and \(\mathrm{AA}\) in either habitat
 (\autoref{fig:traits-aa}B;
-\(\text{slope}~= 0.14~[\numrange{-0.06}{0.35}]\)) in our sample.
+\(\text{slope}~= 0.14~[\numrange{-0.057}{0.34}]\)) in our sample.
 
 \begin{figure}[H]
   \includegraphics{../figures/traits-aa.pdf}
@@ -895,14 +896,14 @@ gain without significant additional water loss, yet it is rare in nature
 and we do not know why. The strong association between amphiostomy and
 sunny, open habitats suggests that amphistomy may benefit sun leaves
 more than shade leaves, but progress has been limited by the lack of
-evidence that amphiostomy \emph{per se} affects improves photosynthesis
-in a given leaf. By experimentally blocking gas exchange through the
-upper surface in a controlled environment, we directly compared an
+evidence that amphiostomy \emph{per se} improves photosynthesis in a
+given leaf. By experimentally blocking gas exchange through the upper
+surface in a controlled environment, we directly compared an
 amphistomatous leaf to an otherwise identical pseudohypostomatous leaf.
 This allows us to quantity the amphistomy advantage (\(\mathrm{AA}\))
 holding all else constant. Taking advantage of the steep climatic
 gradients in the Hawaiian archipelago, we applied this new method to
-show for the first time that sun leaves benefit 4 times more from
+show for the first time that sun leaves benefit 4.04 times more from
 amphistomy than shade leaves on ʻilima (\emph{Sida fallax}) plants
 (\(\mathrm{AA}_\text{coastal} = 0.12\)
 vs.~\(\mathrm{AA}_\text{montane} = 0.027\)). Coastal and montane ʻilima
@@ -915,7 +916,7 @@ montane, but not coastal habitats (\autoref{fig:study-system}d). While
 this result has not yet been validated in other species, our results
 indicate that part of the reason amphistomatous leaves are found most
 commonly in high light habitats is that the adaptive benefit is greater
-in this environment.
+in such environments.
 
 If \(\mathrm{AA}\) is typically greater in sun leaves than shade leaves,
 it could partially explain the distribution of amphi- and hypostoamtous
@@ -934,8 +935,8 @@ enough data to conclude that leaf thickness explains the variation in
 \(\mathrm{AA}\) between habitats. Alternatively, other biochemical or
 anatomical differences between coastal and montane leaves may explain
 why \(\mathrm{AA}\) is greater in coastal leaves. The negative
-relationship, (albeit nonsignificant in that 95\% confidence intervals
-encompassed 0), between leaf thickness and \(\mathrm{AA}\) could be
+relationship, albeit nonsignificant in that 95\% confidence intervals
+encompassed 0, between leaf thickness and \(\mathrm{AA}\) could be
 explained if thicker leaves compensated by having a more porous
 mesophyll and/or less tortuous airspaces (Théroux-Rancourt et al.,
 2021).
@@ -991,7 +992,7 @@ photosynthetic capacity that is well illuminated and hydrated, the major
 limitation becomes CO\(_2\). Under these conditions, amphistomy may
 substantially increase photosynthesis, as we observe in coastal ʻilima
 leaves. Selection on increased photosynthesis under similar conditions
-may explain why crops leaves tend to increase stomatal density ratio
+may explain why crop leaves tend to increase stomatal density ratio
 during domestication (Milla et al., 2013).
 
 Three limitations of this study are the small sample size, experimental
@@ -1020,8 +1021,8 @@ as well their interaction, to trait variance in nature. However,
 reciprocal transplants cannot control for other differences between
 coastal and montane habitats besides vegetation height, such as
 temperature and precipitaiton. Experimental studies in controlled
-environments will be necessary to isolate the effect light quantity and
-quality on \(\mathrm{AA}\).
+environments will be necessary to isolate the effects of light quantity
+and quality on \(\mathrm{AA}\).
 
 \hypertarget{conclusions}{%
 \section{CONCLUSIONS ---}\label{conclusions}}

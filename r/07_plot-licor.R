@@ -111,8 +111,6 @@ ggplot(licor,
   ylab(expression(paste(
     italic(A), " [", mu, "mol ", m ^ -2 ~ s ^ -1, "]"
   ))) +
-  # xlim(0, 0.5) +
-  # ylim(0, 40) +
   theme_classic() +
   theme(
     axis.text = element_text(size = 10),
