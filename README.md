@@ -2,7 +2,7 @@
 
 This repository contains source code associated with the manuscript:
 
-Amphistomy increases leaf photosynthesis more in coastal than montane plants of Hawaiian ʻilima (*Sida fallax*. In review at *The American Journal of Botany*.
+Amphistomy increases leaf photosynthesis more in coastal than montane plants of Hawaiian ʻilima (*Sida fallax*. Accepted at *The American Journal of Botany*.
 
 ## Author contributions
 
@@ -23,7 +23,7 @@ This repository has the following file folders:
 
 To run code and render manuscript:
 
-- [*R*](https://cran.r-project.org/) version >4.3.0 and [*RStudio*](https://www.rstudio.com/) (recommended)
+- [*R*](https://cran.r-project.org/) version >4.3.0 and [*RStudio*](https://www.posit.co/) (recommended)
 - [LaTeX](https://www.latex-project.org/): you can install the full version or try [**tinytex**](https://yihui.org/tinytex/)
 - [GNU Make](https://www.gnu.org/software/make/): In terminal, you can just type `make paper` to render the manuscript. You can also use it to re-run all scripts.
 
@@ -43,7 +43,7 @@ To fit **brms** model, set up [**cmdstanr**](https://mc-stan.org/cmdstanr/).
 git clone git@github.com:cdmuir/stomata-ilima.git
 ```
 
-2. Open `stomata-ilima.Rproj` in [RStudio](https://www.rstudio.com/)
+2. Open `stomata-ilima.Rproj` in [RStudio](https://www.posit.co/)
 
 ## Rendering manuscript
 
@@ -53,7 +53,7 @@ At minimum, you will need [R](https://cran.r-project.org/) version 4.3.0 or grea
 
 ### Rendering manuscript with pre-saved outout
 
-Open `ms/ms.qmd` and knit using [RStudio](https://www.rstudio.com/).
+Open `ms/ms.qmd` and knit using [RStudio](https://www.posit.co/).
 
 You can also run the following code from the terminal:
 
