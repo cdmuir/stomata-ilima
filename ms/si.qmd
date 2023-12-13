@@ -1,4 +1,5 @@
 ---
+title: "Appendix S1: Supplemental figures and table"
 format:
   pdf:
     keep-tex: true  
@@ -8,7 +9,16 @@ format:
 header-includes: |
   \usepackage{fancyhdr}
   \pagestyle{fancy}
-  \fancyhead[C]{Triplett \textit{et al.} — \textit{American Journal of Botany} 2023 – Appendix S1}
+  \fancyhead[C]{Triplett \textit{et al.} — \textit{American Journal of Botany} 2024 – Appendix S1}
+  \addtokomafont{disposition}{\rmfamily}
+  \RedeclareSectionCommand[
+    font=\normalfont\Large]{section}
+  \RedeclareSectionCommand[
+    font=\normalfont\normalsize\bfseries]{subsection}
+  \RedeclareSectionCommand[
+    font=\normalfont\normalsize\itshape]{subsubsection}
+  \RedeclareSectionCommand[
+    font=\normalfont\normalsize]{paragraph}
 mainfont: Times New Roman
 ---
 

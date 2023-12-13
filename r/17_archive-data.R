@@ -2,12 +2,16 @@ source("r/header.R")
 
 trait = read_rds("processed-data/trait.rds")
 site_Ags = read_rds("objects/site_Ags.rds")
+site = read_rds("processed-data/site.rds")
 
 # Individual level data
-ind_data = trait |> 
+ind_data = trait |>
   mutate(
-    genus = "Sida", species = "fallax", authority = "Walp.",
-    exposition = "natural environment", plant_maturity = "mature",
+    genus = "Sida",
+    species = "fallax",
+    authority = "Walp.",
+    exposition = "natural environment",
+    plant_maturity = "mature",
     leaf_age = "mature"
   ) |>
   select(
@@ -37,14 +41,40 @@ ind_data = trait |>
     leaf_thickness_um,
     licor_leaf
   ) |>
-    left_join(
-      site_Ags |>
-        select(site_code, Tleaf, name, value) |>
-        pivot_wider() |>
-        mutate(licor_leaf = TRUE),
-      by = join_by(site_code, licor_leaf)
-    ) |>
-  select(-licor_leaf)
+  left_join(
+    site_Ags |>
+      select(site_code, Tleaf, name, value) |>
+      pivot_wider() |>
+      mutate(licor_leaf = TRUE),
+    by = join_by(site_code, licor_leaf)
+  ) |>
+  select(-licor_leaf) |>
+  left_join(
+    site |>
+      select(
+        site,
+        site_code,
+        site_type,
+        island,
+        latitude_degree,
+        longitude_degree,
+        date_sampled,
+        tair_ann,
+        sl_mst_ann,
+        cl_sw_ann,
+        veg_ht_ann,
+        rf_ann
+      ),
+    by = join_by(
+      site,
+      site_code,
+      site_type,
+      island,
+      latitude_degree,
+      longitude_degree,
+      date_sampled
+    )
+  )
 
 # Summary table
 ind_data |>

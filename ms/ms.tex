@@ -113,8 +113,8 @@
 
 % toggle spacing
 \usepackage{setspace}
-% \singlespacing
-\doublespacing
+\singlespacing
+% \doublespacing
 
 % Hawaiian language characters
 % https://tex.stackexchange.com/questions/424535/how-to-type-a-proper-hawai%CA%BBian-%CA%BBokina
@@ -230,7 +230,7 @@ montane plants of Hawaiian ʻilima (\emph{Sida fallax})}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, interior hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
 
 \begin{center}
 Genevieve Triplett$^1$, Thomas N. Buckley$^2$, Christopher D. Muir$^{1,3,*}$
@@ -261,38 +261,36 @@ stomata on both upper and lower leaf surfaces, called amphistomy, is
 unresolved. A widespread association between amphistomy and open, sunny
 habitats suggests the adaptive benefit of amphistomy may be greatest in
 these contexts, but this hypothesis has not been tested experimentally.
-Understanding why amphistomy evolves can inform its potential as a
-target for crop improvement and paleoenvironment reconstruction.
+Understanding amphistomy informs its potential as a target for crop
+improvement and paleoenvironment reconstruction.
 
-\textbf{Methods} We developed a new method to quantify ``amphistomy
+\textbf{Methods} We developed a method to quantify ``amphistomy
 advantage'', \(\mathrm{AA}\), as the log-ratio of photosynthesis in an
 amphistomatous leaf to that of the same leaf but with gas exchange
-blocked through the upper (adaxial) surface, which we term
-``pseudohypostomy''. We used humidity to modulate stomatal conductance
-and thus compare photosynthetic rates at the same total stomatal
-conductance. We estimated \(\mathrm{AA}\) and related physiological and
-anatomical traits in 12 populations, six coastal (open, sunny) and six
-montane (closed, shaded), of the indigenous Hawaiian species ʻilima
-(\emph{Sida fallax}).
+blocked through the upper surface (pseudohypostomy). Humidity modulated
+stomatal conductance and thus enabled comparing photosynthesis at the
+same total stomatal conductance. We estimated \(\mathrm{AA}\) and leaf
+traits in six coastal (open, sunny) and six montane (closed, shaded)
+populations of the indigenous Hawaiian species ʻilima (\emph{Sida
+fallax}).
 
 \textbf{Key results} Coastal ʻilima leaves benefit 4.04 times more from
-amphistomy compared to their montane counterparts. Our evidence was
-equivocal with respect to two hypotheses -- that coastal leaves benefit
-more because 1) they are thicker and therefore have lower CO\(_2\)
-conductance through the internal airspace, and 2) that they benefit more
-because they have similar conductance on each surface, as opposed to
-most of the conductance being on the lower (abaxial) surface.
+amphistomy than montane leaves. Evidence was equivocal with respect to
+two hypotheses -- that coastal leaves benefit more because 1) they are
+thicker and have lower CO\(_2\) conductance through the internal
+airspace, and 2) that they benefit more because they have similar
+conductance on each surface, as opposed to most conductance being
+through the lower surface.
 
 \textbf{Conclusions} This is the first direct experimental evidence that
-amphistomy \emph{per se} increases photosynthesis, consistent with the
-hypothesis that parallel pathways through upper and lower mesophyll
-increase the supply of CO\(_2\) to chloroplasts. The prevalence of
-amphistomatous leaves in open, sunny habitats can partially be explained
-the increased benefit of amphistomy in `sun' leaves, but the mechanistic
-basis of this observation is an area for future research.
+amphistomy increases photosynthesis, consistent with the hypothesis that
+parallel pathways through upper and lower mesophyll increase CO\(_2\)
+supply to chloroplasts. The prevalence of amphistomatous leaves in open,
+sunny habitats can partially be explained the increased benefit of
+amphistomy in `sun' leaves, but the mechanistic basis remains uncertain.
 
-\textbf{Keywords:} amphstomy, leaf, light, Hawaiʻi, \emph{Sida fallax},
-stomata
+\textbf{Keywords:} amphistomy, Hawaiʻi, leaf, light, Malvaceae,
+photosynthesis, \emph{Sida fallax}, stomata
 
 \hypertarget{introduction}{%
 \section{INTRODUCTION ---}\label{introduction}}
@@ -476,7 +474,7 @@ tall with strong, woody stems. These individuals have smooth, green
 foliage with serrated edges. Montane populations exhibit traits that may
 help them to compete for light availability. This montane morphology is
 not found in \emph{S. fallax} populations on other Pacific Islands
-(Pejhanmehr, 2022).
+(Pejhanmehr et al., 2023).
 
 Because of their contrasting habitat and morphology, we treat leaves
 from coastal and montane plants as representatives of sun and shade
@@ -486,13 +484,6 @@ leaves of coastal ʻilima plants will have greater \(\mathrm{AA}\) than
 shade leaves of montane plants; and if so, is this because 2a) coastal
 plants have thicker leaves than montane plants and/or 2b) coastal plants
 have a \(g_{\mathrm{smax,ratio}}\) closer to 0.5?
-
-\begin{figure}[H]
-  \includegraphics[height=3.25in]{../figures/study-system.pdf}
-  \includegraphics[height=3.25in]{../figures/habitat-climate.pdf}
-  \caption{A. Typical growth form of montane (left) and coastal (right) ‘ilima plants and B. leaves. C. Map of the sites that were sampled on the islands of Oʻahu and Hawaiʻi (aka Big Island). D. Climatic, light, and vegetation height comparisons between montane (blue) and coastal (orange) habitats sampled in this study. Open circles are values for the midpoint of each site transect; closed circles and intervals are the mean $\pm~1$ standard error. The habitats differ significantly in mean annual precipitation (top-left), solar radiation (bottom-left), temperature (top-right), and vegetation height (bottom-right). MAP = mean annual precipitation; MAT = mean annual temperature; ns = not significant; * indicates $0.01 \le P < 0.05$; ** indicates $0.001 \le P < 0.01$.}
-  \label{fig:study-system}
-\end{figure}
 
 \hypertarget{methods}{%
 \section{MATERIALS AND METHODS ---}\label{methods}}
@@ -527,33 +518,6 @@ century and 21st century; the solar radiation data are calibrated from
 satellite measurements collected between 2002 and 2009 (Giambelluca et
 al., 2014). We tested whether climatic variables differed among our
 coastal and montane populations using Welch's two-sample \(t\)-test.
-
-\hypertarget{tbl-locations}{}
-\begin{table}
-\caption{\label{tbl-locations}ʻIlima study site location information. }\tabularnewline
-
-\centering
-\begin{tabular}{>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}}
-\toprule
-Site & Island & Habitat & Latitude & Longitude & Elevation (mas)\\
-\midrule
-\cellcolor{gray!6}{Kahuku Point} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{coastal} & \cellcolor{gray!6}{21.710} & \cellcolor{gray!6}{-157.982} & \cellcolor{gray!6}{4}\\
-Kaloko beach & Oʻahu & coastal & 21.293 & -157.661 & 4\\
-\cellcolor{gray!6}{Kaloko-Honokōhau national historical park} & \cellcolor{gray!6}{Hawaiʻi} & \cellcolor{gray!6}{coastal} & \cellcolor{gray!6}{19.676} & \cellcolor{gray!6}{-156.024} & \cellcolor{gray!6}{6}\\
-Kaʻena Point & Oʻahu & coastal & 21.574 & -158.278 & 4\\
-\cellcolor{gray!6}{Makapuʻu beach} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{coastal} & \cellcolor{gray!6}{21.313} & \cellcolor{gray!6}{-157.661} & \cellcolor{gray!6}{3}\\
-\addlinespace
-Puakō petroglyph park & Hawaiʻi & coastal & 19.957 & -155.858 & 8\\
-\cellcolor{gray!6}{Hawaiʻi loa ridge} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{montane} & \cellcolor{gray!6}{21.294} & \cellcolor{gray!6}{-157.727} & \cellcolor{gray!6}{352}\\
-Hāloa ʻĀina & Hawaiʻi & montane & 19.552 & -155.793 & 1567\\
-\cellcolor{gray!6}{Kaʻohe game management area} & \cellcolor{gray!6}{Hawaiʻi} & \cellcolor{gray!6}{montane} & \cellcolor{gray!6}{19.817} & \cellcolor{gray!6}{-155.616} & \cellcolor{gray!6}{1946}\\
-Koaiʻa tree sanctuary & Hawaiʻi & montane & 20.048 & -155.737 & 970\\
-\addlinespace
-\cellcolor{gray!6}{Mauʻumae Ridge} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{montane} & \cellcolor{gray!6}{21.305} & \cellcolor{gray!6}{-157.779} & \cellcolor{gray!6}{248}\\
-Waʻahila ridge & Oʻahu & montane & 21.314 & -157.793 & 357\\
-\bottomrule
-\end{tabular}
-\end{table}
 
 \hypertarget{leaf-traits}{%
 \subsection{Leaf traits ---}\label{leaf-traits}}
@@ -593,8 +557,9 @@ cuticle to lower cuticle.
 At each site, we selected one representative leaf from one plant near
 the middle of the transect for gas exchange measurements using a
 portable infrared gas analyzer (LI-6800PF, LI-COR Biosciences, Lincoln,
-NE, USA). We estimated the photosynthetic rate (\(A\)) and stomatal
-conductance to water vapor (\(g_\text{sw}\)) at saturating light
+Nebraska, USA). We estimated the photosynthetic rate (\(A\)) and
+stomatal conductance to water vapor (\(g_\text{sw}\)) at saturating
+light
 (\(\text{photosynthetic photon flux density (PPFD)} = 2000~\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}\)),
 ambient CO\(_2\) (415 ppm), and
 \(T_\mathrm{leaf} = 25.0 \textendash 29.3° \text{C}\). The midday
@@ -639,6 +604,7 @@ the propafilm. We also set the stomatal conductance ratio, for purposes
 of calculating boundary layer conductance, to 0 for pseudohypo leaves
 following manufacturer directions.
 
+Appendix S1 (see the Supplementary Data with this article),
 \autoref{fig:ags-curve} illustrates our method for collecting
 \(A \textendash g_\text{sw}\) curves. We collected two curves per leaf,
 an amphi (untreated) curve and a pseudohypo (treated) curve. To control
@@ -692,7 +658,7 @@ maximum \(g_\text{sw}\) of the pseudohypo curve. In those cases, we
 estimated \(\mathrm{AA}\) by extrapolating slightly,
 \(1.98\times 10^{-3}~\text{and}~3.29\times 10^{-3}~\text{mol}~\text{m}^{-2}~\text{s}^{-1}\),
 beyond the measured curves to the \(g_\mathrm{sw}\) value in between the
-curves. The vertical lines in \autoref{fig:licor} show the
+curves. The vertical lines in Appendix S1, \autoref{fig:licor} show the
 \(g_\text{sw}\) for each leaf. We estimated \(\mathrm{AA}\) from
 \(\hat{A}_\text{amphi}\) and \(\hat{A}_\text{hypo}\) for each leaf using
 the log-response ratio shown above.
@@ -701,7 +667,7 @@ To estimate \(\hat{\beta}\)'s from the \(A \textendash g_\text{sw}\)
 curve for each leaf, we fit Bayesian regressions using the \emph{R}
 package \textbf{brms} version 2.20.4 (Bürkner, 2017) with MCMC sampling
 in \emph{Stan} (Stan Development Team, 2023). We used CmdStan version
-2.33.1 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023) to
+2.33.1 and \textbf{cmdstanr} version 0.6.1 (Gabry et al., 2023) to
 interface with \emph{R} version 4.3.1 (R Core Team, 2023). We sampled
 the posterior distribution from 4 chains with 1000 iterations each after
 1000 warmup iterations per chain. We estimated parameters and confidence
@@ -723,20 +689,19 @@ using a Bayesian mixed-effects model with habitat as a fixed effect and
 individual plant and site as random effects. We used the \emph{R}
 package \textbf{brms} version 2.20.4 (Bürkner, 2017) to fit the model in
 \emph{Stan} (Stan Development Team, 2023) with CmdStan version 2.33.1
-and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar, 2023). We
-sampled the posterior distribution from 4 chains with 1000 iterations
-each after 1000 warmup iterations per chain. We estimated the
-relationship between population average leaf thickness and
-\(\mathrm{AA}\) measured from a single individual per population. We
-used this approach because most of the variation in leaf thickness was
-among sites and the plant selected for gas exchange measurements was not
-always among the plants randomly selected for leaf thickness, precluding
-individual level correlation. We propagated uncertainty about in
-\(\mathrm{AA}\) and leaf thickness estimates by integrating over the
-entire posterior distribution sample for each variable. The key
-prediction is that the effect of leaf thickness on \(\mathrm{AA}\) is
-positive, meaning the 95\% confidence interval of the slope should be
-positive and not encompass 0.
+and \textbf{cmdstanr} version 0.6.1 (Gabry et al., 2023). We sampled the
+posterior distribution from 4 chains with 1000 iterations each after
+1000 warmup iterations per chain. We estimated the relationship between
+population average leaf thickness and \(\mathrm{AA}\) measured from a
+single individual per population. We used this approach because most of
+the variation in leaf thickness was among sites and the plant selected
+for gas exchange measurements was not always among the plants randomly
+selected for leaf thickness, precluding individual level correlation. We
+propagated uncertainty about in \(\mathrm{AA}\) and leaf thickness
+estimates by integrating over the entire posterior distribution sample
+for each variable. The key prediction is that the effect of leaf
+thickness on \(\mathrm{AA}\) is positive, meaning the 95\% confidence
+interval of the slope should be positive and not encompass 0.
 
 \hypertarget{objective-2b-is-g_mathrmsmaxratio-closer-to-0.5-in-coastal-leaves-than-montane-leaves}{%
 \subsubsection{\texorpdfstring{Objective 2b: Is
@@ -755,9 +720,9 @@ the explanatory variables were habitat as a fixed effect and leaf within
 individual plant, individual plant, and site as random effects. We used
 the \emph{R} package \textbf{brms} version 2.20.4 (Bürkner, 2017) to fit
 the model in \emph{Stan} (Stan Development Team, 2023) with CmdStan
-version 2.33.1 and \textbf{cmdstanr} version 0.6.1 (Gabry and Češnovar,
-2023). We interpolated missing adaxial guard cell lengths from 6 out of
-185 samples with zero adaxial stomata using the ``mi'' function in
+version 2.33.1 and \textbf{cmdstanr} version 0.6.1 (Gabry et al., 2023).
+We interpolated missing adaxial guard cell lengths from 6 out of 185
+samples with zero adaxial stomata using the ``mi'' function in
 \textbf{brms} package. We sampled the posterior distribution from 4
 chains with 1000 iterations each after 1000 warmup iterations per chain.
 From each posterior sample, we calculated \(g_{\mathrm{smax,ratio}}\)
@@ -818,15 +783,15 @@ Amphistomy increases photosynthesis in leaves of coastal ʻilima plants
 more than that of montane plants. \(\mathrm{AA}\) was significantly
 greater than 0 (95\% confidence intervals did not overlap 0) in 5 of 6
 coastal leaves, but only 1 of 6 montane leaves
-(\autoref{fig:habitat-aa}; see \autoref{fig:licor} for individual
-curves). Overall, the average \(\mathrm{AA}\) among coastal and montane
-leaves is \(0.12~[\numrange{0.077}{0.15}]\) and
+(\autoref{fig:habitat-aa}; see Appendix S1, \autoref{fig:licor} for
+individual curves). Overall, the average \(\mathrm{AA}\) among coastal
+and montane leaves is \(0.12~[\numrange{0.077}{0.15}]\) and
 \(0.027~[\numrange{-0.0034}{0.057}]\), respectively; the difference in
 average \(\mathrm{AA}\) between habitat types is
 \(\mathrm{AA}_\text{coastal} - \mathrm{AA}_\text{montane} = 0.09~[\numrange{0.039}{0.14}]\).
-Posterior predictions closely match observed values of \(A\)
-(\autoref{fig:pp-licor}), indicating an adequate model fit from which we
-can interpolate between measurements reliably. It also suggests that
+Posterior predictions closely match observed values of \(A\) (Appendix
+S1, \autoref{fig:pp-licor}), indicating an adequate model fit from which
+we can interpolate between measurements reliably. It also suggests that
 slight extrapolation beyond the data should be reliable, but this is
 less certain. When we remove two leaves where we extrapolated slightly
 beyond fitted \(A \textendash g_\mathrm{sw}\) curves, we estimate that
@@ -838,15 +803,9 @@ slightly, but not significantly higher in coastal leaves (Welch Two
 Sample \emph{t}-test, \(t_{9.65} = 1.6\), \(P = 0.14\)); total stomatal
 conductance was similar (Welch Two Sample \emph{t}-test,
 \(t_{9.71} = -0.09\), \(P = 0.93\)) in coastal and montane leaves
-(\autoref{fig:habitat-Ags}). Water-use efficiency
+(Appendix S1, \autoref{fig:habitat-Ags}). Water-use efficiency
 (\(A / g_\mathrm{sw}\)) was significantly higher in coastal leaves
 (Welch Two Sample \emph{t}-test, \(t_{9.99} = 2.54\), \(P = 0.03\)).
-
-\begin{figure}[H]
-  \includegraphics{../figures/habitat-aa.pdf}
-  \caption{Coastal leaves benefit more from amphistomy than montane leaves. A positive amphistomy advantage ($y$-axis) means that the photosynthetic rate of an amphistomatous leaf is greater than that of an identical pseudohypostomatous leaf at the same overall $g_\mathrm{sw}$. Each point-interval is the median posterior estimate plus 95\% confidence interval of amphistomy advantage for that leaf. Each leaf is from a different montane (blue) or coastal (orange) site, arranged by habitat and ascending amphistomy advantage within habitat. The longer horizonal bars are the average amphistomy advantage for montane and coastal leaves. $g_\mathrm{sw}$, stomatal conductance to water vapor.}
-  \label{fig:habitat-aa}
-\end{figure}
 
 \hypertarget{leaf-thickness-is-associated-with-amphistomy-advantage-between-but-not-within-habitats}{%
 \subsection{Leaf thickness is associated with amphistomy advantage
@@ -868,25 +827,20 @@ with amphistomy advantage
 Coastal and montane leaves have similar average
 \(g_\mathrm{smax,ratio}\), the ratio of adaxial (upper) to total
 \(g_\mathrm{smax}\), the anatomical maximum stomatal conductance to
-water vapor (\autoref{fig:habitat-gmaxratio}); coastal leaves have
-\(0.059~[\numrange{-0.14}{0.28}]\) higher \(g_\mathrm{smax,ratio}\) than
-montane leaves, but the 95\% confidence intervals overlap 0 difference.
-The \(g_\mathrm{smax,ratio}\) is somewhat bimodal among sites. Some
-sites in both habitats have leaves with \(g_\mathrm{smax,ratio} < 0.07\)
-and others with \(g_\mathrm{smax,ratio} > 0.2\)
-(\autoref{fig:habitat-gmaxratio}). This is particularly noticeable in
+water vapor (Appendix S1, \autoref{fig:habitat-gmaxratio}); coastal
+leaves have \(0.059~[\numrange{-0.14}{0.28}]\) higher
+\(g_\mathrm{smax,ratio}\) than montane leaves, but the 95\% confidence
+intervals overlap 0 difference. The \(g_\mathrm{smax,ratio}\) is
+somewhat bimodal among sites. Some sites in both habitats have leaves
+with \(g_\mathrm{smax,ratio} < 0.07\) and others with
+\(g_\mathrm{smax,ratio} > 0.2\) (Appendix S1,
+\autoref{fig:habitat-gmaxratio}). This is particularly noticeable in
 montane sites where those on the Big Island of Hawaiʻi all have low
 \(g_\mathrm{smax,ratio}\) whereas those on Oʻahu have relatively high
 \(g_\mathrm{smax,ratio}\). There is no relationship between
 \(g_\mathrm{smax,ratio}\) and \(\mathrm{AA}\) in either habitat
 (\autoref{fig:traits-aa}B;
 \(\text{slope}~= 0.14~[\numrange{-0.057}{0.34}]\)) in our sample.
-
-\begin{figure}[H]
-  \includegraphics{../figures/traits-aa.pdf}
-  \caption{Relationships between leaf amphistomy advantage, (A) leaf thickness and (B) $g_\mathrm{smax,ratio}$ among ʻilima (\textit{Sida fallax}) plants from montane (blue) and coastal (orange) habitats in Hawaiʻi. A positive amphistomy advantage ($y$-axis) means that the photosynthetic rate of an amphistomatous leaf is greater than that of an identical pseudohypostomatous leaf at the same overall $g_\mathrm{sw}$. Each point-interval is the median posterior estimate plus 95\% confidence interval of the trait value. Each leaf is from a different montane (blue) or coastal (orange) site. Lines are the estimated linear regression of (A) log(leaf thickness) and (B) $g_\mathrm{smax,ratio}$ on amphistomy advantage; ribbons are the 95\% confident bands of the regression. Symbols: $g_\mathrm{smax,ratio}$, anatomical maximum stomatal conductance ratio; $g_\mathrm{sw}$, stomatal conductance to water vapor.}
-  \label{fig:traits-aa}
-\end{figure}
 
 \hypertarget{discussion}{%
 \section{DISCUSSION ---}\label{discussion}}
@@ -1050,12 +1004,13 @@ promising area for future research.
 \hypertarget{acknowledgments}{%
 \section{Acknowledgments ---}\label{acknowledgments}}
 
-The authors thank Kasey Barton and two anonymous reviewers for feedback
-on an earlier version of this manuscript, the University of Hawaiʻi
-honors council for guidance to GT, Tawn Speetjens for access to one
-montane site, TM Perez for advice on leaf sectioning, startup funds from
-the University of Hawaiʻi, NSF Award 1929167 to CDM, and NSF Award
-2307341 to TNB.
+The authors thank Kasey Barton and three anonymous reviewers for
+feedback on an earlier version of this manuscript, the University of
+Hawaiʻi honors council for guidance to GT, Tawn Speetjens for access to
+one montane site, TM Perez for advice on leaf sectioning, startup funds
+from the University of Hawaiʻi, NSF Award 1929167 to CDM, and NSF Award
+2307341 to TNB. This is publication \#213 from the School of Life
+Sciences, University of Hawaiʻi at Mānoa.
 
 \hypertarget{author-ontributions}{%
 \section{Author Contributions ---}\label{author-ontributions}}
@@ -1068,10 +1023,8 @@ contributed to development of the method and helped edit the manuscript.
 ---}\label{data-availability-statement}}
 
 Custom scripts are available on a GitHub repository
-(https://github.com/cdmuir/stomata-ilima) and will be archived on Zenodo
-with a DOI and stable URL upon publication. Raw data will be deposited
-on Dryad with a DOI and stable URL upon publication. {[}THE GITHUB REPO
-AND DRYAD DATA ARE AVAILABLE TO REVIEWERS{]}
+(https://github.com/cdmuir/stomata-ilima) and archived on Zenodo (). Raw
+data are deposited on Dryad (https://doi.org/10.5061/dryad.rxwdbrvfw ).
 
 \hypertarget{supporting-information}{%
 \section{Supporting Information ---}\label{supporting-information}}
@@ -1085,54 +1038,10 @@ Information section at the end of the article.
   Appendix S1: Supplemental figures and table
 \end{itemize}
 
-\renewcommand\thefigure{S\arabic{figure}}    
-\renewcommand\thetable{S\arabic{table}}    
-\renewcommand\theequation{S\arabic{equation}}    
-\setcounter{figure}{0}    
-\setcounter{table}{0}    
-\setcounter{equation}{0}
-
-\begin{figure}
-  \captionsetup{labelformat=empty}
-  \caption{}
-  \label{fig:ags-curve}
-\end{figure}
-
-\begin{figure}
-  \captionsetup{labelformat=empty}
-  \caption{}
-  \label{fig:licor}
-\end{figure}
-
-\begin{figure}
-  \captionsetup{labelformat=empty}
-  \caption{}
-  \label{fig:pp-licor}
-\end{figure}
-
-\begin{figure}
-  \captionsetup{labelformat=empty}
-  \caption{}
-  \label{fig:habitat-Ags}
-\end{figure}
-
-\begin{figure}
-  \captionsetup{labelformat=empty}
-  \caption{}
-  \label{fig:habitat-gmaxratio}
-\end{figure}
-
-\begin{table}
-  \captionsetup{labelformat=empty}
-  \caption{}
-  
-\end{table}
-
 \newpage
 
 \hypertarget{literature-cited}{%
-\section*{Literature Cited ---}\label{literature-cited}}
-\addcontentsline{toc}{section}{Literature Cited ---}
+\section{Literature Cited ---}\label{literature-cited}}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
@@ -1273,7 +1182,7 @@ stomatal conductance models for application in {Earth} system models}.
 \emph{Global Change Biology} 24: 5708--5723.
 
 \leavevmode\vadjust pre{\hypertarget{ref-gabry_cmdstanr_2023}{}}%
-Gabry, J., and R. Češnovar. 2023.
+Gabry, J., R. Češnovar, and A. Johnson. 2023.
 \href{https://mc-stan.org/cmdstanr,\%20https://discourse.mc-stan.org}{Cmdstanr:
 {R} {Interface} to '{CmdStan}'}.
 
@@ -1545,14 +1454,11 @@ Peat, H. J., and A. H. Fitter. 1994. A comparative study of the
 distribution and density of stomata in the {British} flora.
 \emph{Biological Journal of the Linnean Society} 52: 377--393.
 
-\leavevmode\vadjust pre{\hypertarget{ref-pejhanmehr_phylogenetic_2022}{}}%
-Pejhanmehr, M. 2022. Phylogenetic affinities among
-{\textless{}}i{\textgreater{}}{Sida}{\textless{}}{\textbackslash{}}i{\textgreater{}}
-species and allied genera ({Malvaceae}: {Malveae}), and examination of
-{\textless{}}i{\textgreater{}}{Sida}
-fallax{\textless{}}{\textbackslash{}}i{\textgreater{}} within the
-{Hawaiian} {Islands} and throughout the {Pacific}. PhD thesis.
-University of Hawai'i at Mānoa.
+\leavevmode\vadjust pre{\hypertarget{ref-pejhanmehr_low_2023}{}}%
+Pejhanmehr, M., M. Yorkston, and C. W. Morden. 2023.
+\href{https://doi.org/10.2984/76.4.2}{Low {Genetic} {Diversity} in the
+{Highly} {Morphologically} {Diverse} {Sida} fallax {Walp}. ({Malvaceae})
+{Throughout} the {Pacific1}}. \emph{Pacific Science} 76.
 
 \leavevmode\vadjust pre{\hypertarget{ref-poorter_metaanalysis_2019}{}}%
 Poorter, H., Ü. Niinemets, N. Ntagkas, A. Siebenkäs, M. Mäenpää, S.
@@ -1698,6 +1604,100 @@ disadvantage}. \emph{International Journal of Plant Sciences} 167:
 221--230.
 
 \end{CSLReferences}
+
+\clearpage
+
+\hypertarget{tbl-locations}{}
+\begin{table}
+\caption{\label{tbl-locations}ʻIlima study site location information. }\tabularnewline
+
+\centering
+\begin{tabular}{>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}}
+\toprule
+Site & Island & Habitat & Latitude & Longitude & Elevation (mas)\\
+\midrule
+\cellcolor{gray!6}{Kahuku Point} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{coastal} & \cellcolor{gray!6}{21.710} & \cellcolor{gray!6}{-157.982} & \cellcolor{gray!6}{4}\\
+Kaloko beach & Oʻahu & coastal & 21.293 & -157.661 & 4\\
+\cellcolor{gray!6}{Kaloko-Honokōhau national historical park} & \cellcolor{gray!6}{Hawaiʻi} & \cellcolor{gray!6}{coastal} & \cellcolor{gray!6}{19.676} & \cellcolor{gray!6}{-156.024} & \cellcolor{gray!6}{6}\\
+Kaʻena Point & Oʻahu & coastal & 21.574 & -158.278 & 4\\
+\cellcolor{gray!6}{Makapuʻu beach} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{coastal} & \cellcolor{gray!6}{21.313} & \cellcolor{gray!6}{-157.661} & \cellcolor{gray!6}{3}\\
+\addlinespace
+Puakō petroglyph park & Hawaiʻi & coastal & 19.957 & -155.858 & 8\\
+\cellcolor{gray!6}{Hawaiʻi loa ridge} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{montane} & \cellcolor{gray!6}{21.294} & \cellcolor{gray!6}{-157.727} & \cellcolor{gray!6}{352}\\
+Hāloa ʻĀina & Hawaiʻi & montane & 19.552 & -155.793 & 1567\\
+\cellcolor{gray!6}{Kaʻohe game management area} & \cellcolor{gray!6}{Hawaiʻi} & \cellcolor{gray!6}{montane} & \cellcolor{gray!6}{19.817} & \cellcolor{gray!6}{-155.616} & \cellcolor{gray!6}{1946}\\
+Koaiʻa tree sanctuary & Hawaiʻi & montane & 20.048 & -155.737 & 970\\
+\addlinespace
+\cellcolor{gray!6}{Mauʻumae Ridge} & \cellcolor{gray!6}{Oʻahu} & \cellcolor{gray!6}{montane} & \cellcolor{gray!6}{21.305} & \cellcolor{gray!6}{-157.779} & \cellcolor{gray!6}{248}\\
+Waʻahila ridge & Oʻahu & montane & 21.314 & -157.793 & 357\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{figure-legends}{%
+\section{Figure Legends ---}\label{figure-legends}}
+
+\begin{figure}[H]
+  % \includegraphics[height=3.25in]{../figures/study-system.pdf}
+  % \includegraphics[height=3.25in]{../figures/habitat-climate.pdf}
+  \caption{A. Typical growth form of montane (left) and coastal (right) ‘ilima plants and B. leaves. C. Map of the sites that were sampled on the islands of Oʻahu and Hawaiʻi (aka Big Island). D. Climatic, light, and vegetation height comparisons between montane (blue) and coastal (orange) habitats sampled in this study. Open circles are values for the midpoint of each site transect; closed circles and intervals are the mean $\pm~1$ standard error. The habitats differ significantly in mean annual precipitation (top-left), solar radiation (bottom-left), temperature (top-right), and vegetation height (bottom-right). MAP = mean annual precipitation; MAT = mean annual temperature; ns = not significant; * indicates $0.01 \le P < 0.05$; ** indicates $0.001 \le P < 0.01$.}
+  \label{fig:study-system}
+\end{figure}
+
+\begin{figure}[H]
+  % \includegraphics{../figures/habitat-aa.pdf}
+  \caption{Coastal leaves benefit more from amphistomy than montane leaves. A positive amphistomy advantage ($y$-axis) means that the photosynthetic rate of an amphistomatous leaf is greater than that of an identical pseudohypostomatous leaf at the same overall $g_\mathrm{sw}$. Each point-interval is the median posterior estimate plus 95\% confidence interval of amphistomy advantage for that leaf. Each leaf is from a different montane (blue) or coastal (orange) site, arranged by habitat and ascending amphistomy advantage within habitat. The longer horizonal bars are the average amphistomy advantage for montane and coastal leaves. $g_\mathrm{sw}$, stomatal conductance to water vapor.}
+  \label{fig:habitat-aa}
+\end{figure}
+
+\begin{figure}[H]
+  % \includegraphics{../figures/traits-aa.pdf}
+  \caption{Relationships between leaf amphistomy advantage, (A) leaf thickness and (B) $g_\mathrm{smax,ratio}$ among ʻilima (\textit{Sida fallax}) plants from montane (blue) and coastal (orange) habitats in Hawaiʻi. A positive amphistomy advantage ($y$-axis) means that the photosynthetic rate of an amphistomatous leaf is greater than that of an identical pseudohypostomatous leaf at the same overall $g_\mathrm{sw}$. Each point-interval is the median posterior estimate plus 95\% confidence interval of the trait value. Each leaf is from a different montane (blue) or coastal (orange) site. Lines are the estimated linear regression of (A) log(leaf thickness) and (B) $g_\mathrm{smax,ratio}$ on amphistomy advantage; ribbons are the 95\% confident bands of the regression. Symbols: $g_\mathrm{smax,ratio}$, anatomical maximum stomatal conductance ratio; $g_\mathrm{sw}$, stomatal conductance to water vapor.}
+  \label{fig:traits-aa}
+\end{figure}
+
+\renewcommand\thefigure{S\arabic{figure}}    
+\renewcommand\thetable{S\arabic{table}}    
+\renewcommand\theequation{S\arabic{equation}}    
+\setcounter{figure}{0}    
+\setcounter{table}{0}    
+\setcounter{equation}{0}
+
+\begin{figure}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  \label{fig:ags-curve}
+\end{figure}
+
+\begin{figure}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  \label{fig:licor}
+\end{figure}
+
+\begin{figure}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  \label{fig:pp-licor}
+\end{figure}
+
+\begin{figure}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  \label{fig:habitat-Ags}
+\end{figure}
+
+\begin{figure}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  \label{fig:habitat-gmaxratio}
+\end{figure}
+
+\begin{table}
+  \captionsetup{labelformat=empty}
+  \caption{}
+  
+\end{table}
 
 
 

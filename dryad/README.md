@@ -1,12 +1,12 @@
 # Data from: Amphistomy increases leaf photosynthesis more in coastal than montane plants of Hawaiian ʻilima (*Sida fallax*)
 
-[Access this dataset on Dryad](Dataset DOI link)
+https://doi.org/10.5061/dryad.rxwdbrvfw
 
 This dataset contains leaf trait data for each individual 'ilima individual and/or leaf in our sample.
 
 ## Description of the data and file structure
 
-The data are structured as a comma separated value (CSV) file with 185 rows and 27 columns:
+The data are structured as a comma separated value (CSV) file with 185 rows and 32 columns:
 
 * `genus`: genus name
 * `species`: specific epithet
@@ -35,13 +35,18 @@ The data are structured as a comma separated value (CSV) file with 185 rows and 
 * `Tleaf`: leaf temperature for `A` and `gsw` in degree C
 * `A`: photosynthetic CO$_2$ assimilation rate in $\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}$
 * `gsw`: stomatal conductance to water vapor $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$
+* `tair_ann`: site mean annual air temperature in degree C
+* `sl_mst_ann`: site mean annual cloud frequency
+* `cl_sw_ann`: site mean annual solar radiation in W m$^{-2}$
+* `veg_ht_ann`: site vegetation height in m
+* `rf_ann`: site mean annual rainfall in mm
 
 Missing data are indicated by `NA`.
 
 ## Sharing/Access information
 
 Links to other publicly accessible locations of the data:
- - [https://www.try-db.org/](https://www.try-db.org/) [LINK WILL BE UPDATED AFTER PUBLICATION]
+ - [https://www.try-db.org/](https://www.try-db.org/)
 
 ## Code/Software
 
