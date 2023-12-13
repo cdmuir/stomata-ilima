@@ -52,4 +52,4 @@ Links to other publicly accessible locations of the data:
 
 All code associated with these data and related publications is available on GitHub and archived on Zenodo:
   - [https://github.com/cdmuir/stomata-ilima](https://github.com/cdmuir/stomata-ilima)
-  - [https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) [LINK WILL BE UPDATED AFTER PUBLICATION]
+  - [https://doi.org/10.5281/zenodo.10369114](https://doi.org/10.5281/zenodo.10369114)

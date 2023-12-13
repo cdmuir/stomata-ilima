@@ -314,7 +314,7 @@ GT and CDM contributed equally to all stages of this project; TNB contributed to
 
 # Data Availability Statement --- 
 
-Custom scripts are available on a GitHub repository (https://github.com/cdmuir/stomata-ilima) and archived on Zenodo (). Raw data are deposited on Dryad (https://doi.org/10.5061/dryad.rxwdbrvfw
+Custom scripts are available on a GitHub repository (https://github.com/cdmuir/stomata-ilima) and archived on Zenodo (https://doi.org/10.5281/zenodo.10369114). Raw data are deposited on Dryad (https://doi.org/10.5061/dryad.rxwdbrvfw
 ).
 
 # Supporting Information ---
