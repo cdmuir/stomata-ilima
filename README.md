@@ -2,7 +2,7 @@
 
 This repository contains source code associated with the manuscript:
 
-Amphistomy increases leaf photosynthesis more in coastal than montane plants of Hawaiian ʻilima (*Sida fallax*. Accepted at *The American Journal of Botany*.
+Amphistomy increases leaf photosynthesis more in coastal than montane plants of Hawaiian ʻilima (*Sida fallax*). Accepted at *The American Journal of Botany*.
 
 ## Author contributions
 
