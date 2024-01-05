@@ -18,8 +18,8 @@ The data are structured as a comma separated value (CSV) file with 185 rows and 
 * `site_code`: four-letter site code
 * `site_type`: 'coastal' or 'montane' site type
 * `island`: island where site is located (oahu = O'ahu; hawaii = Hawai'i, aka Big Island)
-* `latitude_degree`: site latitude in decimal degrees
-* `longitude_degree`: site longitude in decimal degrees
+* `latitude_degree`: approximate site latitude in decimal degrees
+* `longitude_degree`: approximate site longitude in decimal degrees
 * `elevation_m_site`: site elevation in meters above sea level
 * `elevation_m_plant`: plant elevation in meters above sea level
 * `date_sampled`: date of sampling in YYYY-MM-DD format
@@ -35,11 +35,6 @@ The data are structured as a comma separated value (CSV) file with 185 rows and 
 * `Tleaf`: leaf temperature for `A` and `gsw` in degree C
 * `A`: photosynthetic CO$_2$ assimilation rate in $\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1}$
 * `gsw`: stomatal conductance to water vapor $\text{mol}~\text{m}^{-2}~\text{s}^{-1}$
-* `tair_ann`: site mean annual air temperature in degree C
-* `sl_mst_ann`: site mean annual cloud frequency
-* `cl_sw_ann`: site mean annual solar radiation in W m$^{-2}$
-* `veg_ht_ann`: site vegetation height in m
-* `rf_ann`: site mean annual rainfall in mm
 
 Missing data are indicated by `NA`.
 

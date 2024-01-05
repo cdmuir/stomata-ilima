@@ -59,11 +59,11 @@ ind_data = trait |>
         latitude_degree,
         longitude_degree,
         date_sampled,
-        tair_ann,
-        sl_mst_ann,
-        cl_sw_ann,
-        veg_ht_ann,
-        rf_ann
+        # tair_ann,
+        # sl_mst_ann,
+        # cl_sw_ann,
+        # veg_ht_ann,
+        # rf_ann
       ),
     by = join_by(
       site,
@@ -74,7 +74,14 @@ ind_data = trait |>
       longitude_degree,
       date_sampled
     )
+  ) |>
+  mutate(
+    latitude_degree = round(latitude_degree, 1),
+    longitude_degree = round(longitude_degree, 1),
+    elevation_m_site = round(elevation_m_site, 0),
+    elevation_m_plant = round(elevation_m_plant, 0)
   )
+  
 
 # Summary table
 ind_data |>
