@@ -5,7 +5,7 @@ x1 = seq(-5, 5, 0.01)
 x2 = seq(5, 15, 0.01)
 
 df = tibble(
-  x = c(x1, x2), 
+  x = c(x1, x2),
   y = c(plogis(x1), 2 * (plogis(rev(x2 - 10))) - 1)
 )
 
@@ -13,7 +13,7 @@ df = tibble(
 gp1 = ggplot(df, aes(x, y)) +
   annotate("rect", xmin = 5, xmax = 15, ymin = -Inf, ymax = Inf, color = NA, fill = "grey") +
   geom_segment(
-    data = filter(df, x %in% 5:15), 
+    data = filter(df, x %in% 5:15),
     mapping = aes(x = x, xend = x, y = y, yend = -Inf),
     linetype = "dashed"
   ) +
@@ -41,7 +41,7 @@ gp3 = df |>
   mutate(y1 = y + rnorm(nrow(.), 0, 0.01)) |>
   ggplot(aes(y, y1)) +
   geom_smooth(color = "grey", method = "lm", formula = 'y ~ x') +
-  geom_point(size = 2) +  
+  geom_point(size = 2) +
   annotate("point", x = 1, y = 1, size = 15, shape = "*") +
   xlab(expression(paste(italic(g)[sw], " [mol ", m ^ -2 ~ s ^ -1, "]"))) +
   ylab(expression(paste(italic(A), " [", mu, "mol ", m ^ -2 ~ s ^ -1, "]"))) +
@@ -56,9 +56,9 @@ plot_row = plot_grid(gp1, gp2, gp3, nrow = 1, rel_widths = c(0.6, 0.05, 0.35),
                      labels = c("A", "", "B"))
 
 ## Add title
-title = ggdraw() + 
+title = ggdraw() +
   draw_label(
-    expression(bold(Idealized~example~of~bolditalic(A)-bolditalic(g)[sw]~curve)),
+    expression(paste(bold(Idealized~example~of~bolditalic(A)), "-", bold(bolditalic(g)[sw]~curve))),
     fontface = 'bold', x = 0, hjust = 0
   ) +
   theme(plot.margin = margin(0, 0, 0, 7))
@@ -102,9 +102,9 @@ gp_aa = ggplot(df_aa, aes(x, y, xend = xend, yend = yend, color = `Gas exchange\
   geom_segment(size = 2, lineend = "round") +
   xlim(-1, 2.5) +
   geom_segment(data = df_aa1, lineend = "round", size = 1.5) +
-  geom_text(data = df_aa1, mapping = aes(y = (y + yend) / 2, label= label),
+  geom_text(data = df_aa1, mapping = aes(y = (y + yend) / 2, label = label),
             hjust = -0.1, color = "black") +
-  scale_color_manual(values = c("black", "grey")) +
+  scale_color_manual(values = c("black", "grey"), na.translate = FALSE) +
   xlab(expression(paste(italic(g)[sw], " [mol ", m ^ -2 ~ s ^ -1, "]"))) +
   ylab(expression(paste(italic(A), " [", mu, "mol ", m ^ -2 ~ s ^ -1, "]"))) +
   theme(
@@ -115,7 +115,7 @@ gp_aa = ggplot(df_aa, aes(x, y, xend = xend, yend = yend, color = `Gas exchange\
   )
 
 ## Add title
-title = ggdraw() + 
+title = ggdraw() +
   draw_label(
     "Interpretation of idealized amphi and pseudohypo curves",
     fontface = 'bold', x = 0, hjust = 0
