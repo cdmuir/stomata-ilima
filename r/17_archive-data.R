@@ -81,7 +81,7 @@ ind_data = trait |>
     elevation_m_site = round(elevation_m_site, 0),
     elevation_m_plant = round(elevation_m_plant, 0)
   )
-  
+
 
 # Summary table
 ind_data |>
@@ -112,11 +112,6 @@ sum_data = ind_data |>
     `$A$` = A,
     `$g_\\text{sw}$` = gsw
   )
-  
-
-# After publication, prepare for TRY 
-# https://www.try-db.org/TryWeb/Submission.php
-# 
 
 write_csv(ind_data, "dryad/stomata-ilima.csv")
 write_rds(sum_data, "objects/sum_data.csv")
